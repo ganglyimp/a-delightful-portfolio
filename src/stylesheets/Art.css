@@ -1,0 +1,70 @@
+.Art {
+  height: max(100vh, fit-content);
+  padding: 10px;
+  background-color: #C98373;
+}
+
+.Art h1 {
+  font-size: 8vw;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.Art-tabs {
+  text-align: left;
+  margin-top: 5vh;
+}
+.Art-tabs button {
+  font-size: 4vw;
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
+}
+.Art-tabs button:hover {
+  color: white;
+}
+.Art-tabs b {
+  font-size: 4vw;
+}
+
+.Art section {
+  margin-top: 8vw;
+}
+
+.Art-character {
+  text-align: left;
+}
+.Art-character img {
+  width: 20vw;
+  padding: 20px;
+}
+
+.Art-comic img {
+  height: 100vh;
+}
+
+.Art-painting img {
+  width: 25vw;
+  padding: 20px;
+}
+
+.Art-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 2;
+}
+.Art-modal img {
+  height: 100vh;
+}
+.Art-modal-close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 5vw;
+}
