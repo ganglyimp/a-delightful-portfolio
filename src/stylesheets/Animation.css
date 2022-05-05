@@ -1,3 +1,44 @@
 .Animation {
+  height: 100vh;
+  padding: 10px;
+  background-color: darkslateblue;
+  color: white;
   text-align: center;
+}
+
+.Animation h1 {
+  margin-bottom: 0;
+}
+
+.animation-content {
+  width: 90%;
+  column-count: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.animation-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.animation-content .column {
+  float: left;
+}
+
+.animation-thumbnails {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.animation-thumbnails img {
+  width: 250px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.animation-video {
+  width: 60%;
 }

@@ -20,8 +20,12 @@
   background-color: transparent;
   border-style: none;
   cursor: pointer;
+  transition: color 0.3s;
 }
 .Art-tabs button:hover {
+  color: white;
+}
+.Art-tabs .active {
   color: white;
 }
 .Art-tabs b {
@@ -30,6 +34,9 @@
 
 .Art section {
   margin-top: 8vw;
+}
+.Art section img {
+  cursor: pointer;
 }
 
 .Art-character {
@@ -67,4 +74,5 @@
   top: 10px;
   right: 25px;
   font-size: 5vw;
+  cursor: pointer;
 }

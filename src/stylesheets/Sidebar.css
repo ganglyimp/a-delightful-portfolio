@@ -1,0 +1,43 @@
+.Sidebar {
+  color: white;
+}
+
+.sidebar-button {
+  position: fixed;
+  right: 0;
+  color: black;
+  font-size: 5vw;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+.sidebar-content {
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  text-align: right;
+  padding-top: 5vw;
+  background-color: #93553C;
+  overflow: hidden;
+
+  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.sidebar-content a {
+  padding: 15px;
+  color: white;
+  font-size: 4vw;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.sidebar-content a:hover {
+  color: #E8B284;
+}
+
+.slide-in {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+}

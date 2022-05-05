@@ -8,7 +8,7 @@ function About() {
   return (
     <article className='About' id='About'>
       <h1>About Me</h1>
-      <h2>Comic Artist • Animation • Illustrator</h2>
+      <h2>Comic Artist • Animator • Illustrator</h2>
 
       <div className='About-socials'>
         <a href='https://twitter.com/ADelightfulGoof'><Twitter /></a>

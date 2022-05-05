@@ -18,6 +18,18 @@ import SummerMemories from '../images/paintings/DistantSummerMemories.png';
 import SunsetRansom from '../images/paintings/RansomsAtSunset.png';
 
 function Art() {
+  const characterArt = [{ imgSrc: DnDThunder, imgAlt: 'DnD Thunder' },
+                        { imgSrc: DarkPrince, imgAlt: 'The Dark Prince Famorax Addon Furcifer Rendition' },
+                        { imgSrc: Betelgeuse, imgAlt: 'Betelgeuse Rendition' },
+                        { imgSrc: Lapidot, imgAlt: 'Lapis & Peridot from Steven Universe'},
+                        { imgSrc: VildaliaPose, imgAlt: 'Vildalia Reference Pose'}
+                        ];
+  const comicArt = [{ imgSrc: AutumnSeasoning, imgAlt: 'Autumn Seasoning Pages 1 to 3'}
+                    ];
+  const paintingArt = [{ imgSrc: SummerMemories, imgAlt: 'Distant Summer Memories'},
+                       { imgSrc: SunsetRansom, imgAlt: 'Ocean Cat Panel - Ransoms At Sunset'}
+                      ];
+
   const [activeTab, setActiveTab] = useState(0);
 
   const [showModal, setShowModal] = useState(false);
@@ -35,61 +47,52 @@ function Art() {
       <h1>Art |</h1>
 
       <div className='Art-tabs'>
-        <button type='button' onClick={() => {setActiveTab(0)}}>Character Art</button>
+        <button className={activeTab === 0 ? 'active' : ''} type='button' onClick={() => {setActiveTab(0)}}>Character Art</button>
         <b>•</b>
-        <button type='button' onClick={() => {setActiveTab(1)}}>Comics</button>
+        <button className={activeTab === 1 ? 'active' : ''} type='button' onClick={() => {setActiveTab(1)}}>Comics</button>
         <b>•</b>
-        <button type='button' onClick={() => {setActiveTab(2)}}>Paintings</button>
+        <button className={activeTab === 2 ? 'active' : ''} type='button' onClick={() => {setActiveTab(2)}}>Paintings</button>
       </div>
 
       { activeTab === 0 &&
         <section className='Art-character'>
-          <img src={DnDThunder} 
-               alt='DnD Thunder'  
-               onClick={() => {activateModal(DnDThunder, 'Dnd Thunder')}}
-          />
-
-          <img src={DarkPrince} 
-               alt='The Dark Prince Famorax Addon Furcifer Rendition' 
-               onClick={() => {activateModal(DarkPrince, 'The Dark Prince Famorax Addon Furcifer Rendition')}}
-          />
-
-          <img src={Betelgeuse} 
-               alt='Betelgeuse Rendition' 
-               onClick={() => {activateModal(Betelgeuse, 'Betelgeuse Rendition')}}
-          />
-
-          <img src={Lapidot} 
-               alt='Lapis & Peridot from Steven Universe' 
-               onClick={() => {activateModal(Lapidot, 'Lapis & Peridot from Steven Universe')}}
-          />
-          <img src={VildaliaPose} 
-               alt='Vildalia Reference Pose' 
-               onClick={() => {activateModal(VildaliaPose, 'Vildalia Reference Pose')}}
-          />
+          { characterArt && characterArt.map((item) => {
+              return(
+                <img src={item.imgSrc} 
+                     alt={item.imgAlt} 
+                     onClick={() => {activateModal(item.imgSrc, item.imgAlt)}} 
+                />
+              )
+            })
+          }
         </section>
       }
 
       { activeTab === 1 &&
         <section className='Art-comic'>
-          <img src={AutumnSeasoning} 
-               alt='Autumn Seasoning Pages 1 to 3' 
-               onClick={() => {activateModal(AutumnSeasoning, 'Autumn Seasoning Pages 1 to 3')}}
-          />
+          { comicArt && comicArt.map((item) => {
+              return(
+                <img src={item.imgSrc} 
+                     alt={item.imgAlt} 
+                     onClick={() => {activateModal(item.imgSrc, item.imgAlt)}} 
+                />
+              )
+            })
+          }
         </section>
       }
 
       { activeTab === 2 &&
         <section className='Art-painting'>
-          <img src={SummerMemories} 
-               alt='Distant Summer Memories' 
-               onClick={() => {activateModal(SummerMemories, 'Distant Summer Memories')}}
-          />
-
-          <img src={SunsetRansom} 
-               alt='Ransoms At Sunset' 
-               onClick={() => {activateModal(SunsetRansom, 'Ransoms At Sunset')}}
-          />
+          { paintingArt && paintingArt.map((item) => {
+              return(
+                <img src={item.imgSrc} 
+                     alt={item.imgAlt} 
+                     onClick={() => {activateModal(item.imgSrc, item.imgAlt)}} 
+                />
+              )
+            })
+          }
         </section>
       }
 
