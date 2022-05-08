@@ -3,6 +3,8 @@ import '../stylesheets/Art.css';
 
 import { XLg } from 'react-bootstrap-icons';
 
+import AfterDark from './AfterDark';
+
 /* CHARACTER ART */
 import Betelgeuse from '../images/character/BetelgeuseRendition.png';
 import DnDThunder from '../images/character/DnDThunder.png';
@@ -35,11 +37,13 @@ function Art() {
   const [showModal, setShowModal] = useState(false);
   const [modalImg, setModalImg] = useState();
   const [modalImgAlt, setModalImgAlt] = useState('');
+  const [isComicModal, setIsComicModal] = useState(false);
 
-  const activateModal = (imgSrc, imgAlt) => {
+  const activateModal = (imgSrc, imgAlt, isComic) => {
     setShowModal(true);
     setModalImg(imgSrc);
     setModalImgAlt(imgAlt);
+    setIsComicModal(isComic);
   };
 
   return (
@@ -52,6 +56,8 @@ function Art() {
         <button className={activeTab === 1 ? 'active' : ''} type='button' onClick={() => {setActiveTab(1)}}>Comics</button>
         <b>•</b>
         <button className={activeTab === 2 ? 'active' : ''} type='button' onClick={() => {setActiveTab(2)}}>Paintings</button>
+        <b>•</b>
+        <button className={activeTab === 3 ? 'active' : ''} type='button' onClick={() => {setActiveTab(3)}}>After Dark</button>
       </div>
 
       { activeTab === 0 &&
@@ -60,7 +66,7 @@ function Art() {
               return(
                 <img src={item.imgSrc} 
                      alt={item.imgAlt} 
-                     onClick={() => {activateModal(item.imgSrc, item.imgAlt)}} 
+                     onClick={() => {activateModal(item.imgSrc, item.imgAlt, false)}} 
                 />
               )
             })
@@ -74,7 +80,7 @@ function Art() {
               return(
                 <img src={item.imgSrc} 
                      alt={item.imgAlt} 
-                     onClick={() => {activateModal(item.imgSrc, item.imgAlt)}} 
+                     onClick={() => {activateModal(item.imgSrc, item.imgAlt, true)}} 
                 />
               )
             })
@@ -88,7 +94,7 @@ function Art() {
               return(
                 <img src={item.imgSrc} 
                      alt={item.imgAlt} 
-                     onClick={() => {activateModal(item.imgSrc, item.imgAlt)}} 
+                     onClick={() => {activateModal(item.imgSrc, item.imgAlt, false)}} 
                 />
               )
             })
@@ -96,10 +102,13 @@ function Art() {
         </section>
       }
 
+      { /* activeTab === 3 */ }
+      <AfterDark activeTab={activeTab} setActiveTab={setActiveTab} />
+
       { showModal && 
         <div className='Art-modal' >
           <XLg className='Art-modal-close' onClick={() => setShowModal(false)}/>
-          <img src={modalImg} alt={modalImgAlt} />
+          <img src={modalImg} alt={modalImgAlt} style={(isComicModal) ? {width: '100vw'} : {height: '100vh'}}/>
         </div>
       }
 

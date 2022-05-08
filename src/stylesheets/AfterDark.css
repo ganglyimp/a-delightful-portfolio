@@ -1,3 +1,39 @@
 .AfterDark {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
   text-align: center;
+  color: white;
+  background: rgb(2,0,36,1);
+  overflow-y: auto;
+  z-index: 2;
+
+  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-in {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+}
+
+.AfterDark .back-button {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.AfterDark-images {
+  margin: 0;
+}
+.AfterDark-images img {
+  width: 25vw;
+  padding: 10px;
 }
