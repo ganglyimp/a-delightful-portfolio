@@ -33,4 +33,31 @@
   border-style: none;
   mix-blend-mode: screen;
   cursor: pointer;
+  transition: font-size 0.3s;
+}
+
+.header-buttons button:hover {
+  font-size: 4.5vw;
+  transition: font-size 0.3s;
+}
+
+@media (max-width: 600px) {
+  .App {
+    overflow-x: hidden;
+    z-index: 0;
+  }
+  
+  .App-header h1 {
+    font-size: 8vh;
+  }
+
+  .header-buttons {
+    display: block;
+  }
+
+  .header-buttons button {
+    font-size: 4vh;
+    margin: 10px;
+  }
+  
 }

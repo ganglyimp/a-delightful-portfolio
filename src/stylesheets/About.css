@@ -28,3 +28,30 @@
   color: #652C17;
   font-size: 5vw;
 }
+
+@media (max-width: 600px) {
+  .About {
+    color: white;
+  }
+
+  .About h1 {
+    font-size: 8vh;
+    margin: auto;
+    margin-top: 5vh;
+  }
+
+  .About h2 {
+    font-size: 3vh;
+    margin: auto;
+    margin-top: 3vh;
+  }
+
+  .About-socials {
+    margin-top: 3vh;
+  }
+
+  .About-socials a {
+    font-size: 5vh;
+    color: white;
+  }
+}

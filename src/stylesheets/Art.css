@@ -1,5 +1,6 @@
 .Art {
   height: max(100vh, fit-content);
+  min-height: 100vh;
   padding: 10px;
   background-color: #C98373;
 }
@@ -62,6 +63,7 @@
   top: 0;
   width: 100vw;
   height: 100vh;
+  min-height: 100vh;
   background-color: black;
   overflow-y: auto;
   z-index: 2;
@@ -73,4 +75,11 @@
   right: 25px;
   font-size: 5vw;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .Art {
+    height: max(100vh, fit-content);
+    min-height: 100vh;
+  }
 }
