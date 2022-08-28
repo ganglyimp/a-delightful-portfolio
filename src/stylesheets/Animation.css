@@ -1,5 +1,6 @@
 .Animation {
-  height: 100vh;
+  height: max(100vh, fit-content);
+  min-height: 100vh;
   padding: 10px;
   background-color: darkslateblue;
   color: white;
@@ -7,7 +8,8 @@
 }
 
 .Animation h1 {
-  margin-bottom: 0;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .animation-content {
@@ -18,12 +20,36 @@
   align-items: center;
 }
 
+.animation-video iframe {
+  width: 50vw;
+  height: 33.88vw;
+}
+
 .animation-thumbnails {
   display: flex;
   flex-direction: column;
 }
 .animation-thumbnails img {
-  width: 250px;
+  width: 20vw;
   padding: 10px;
   cursor: pointer;
+  transition: width 0.3s;
+}
+.animation-thumbnails img:hover {
+  width: 20.5vw;
+  transition: width 0.3s;
+}
+
+@media (max-width: 600px) {
+  .Animation h1 {
+    font-size: 15vw;
+  }
+
+  .animation-content {
+    display: block;
+  }
+
+  .animation-thumbnails {
+    display: block;
+  }
 }

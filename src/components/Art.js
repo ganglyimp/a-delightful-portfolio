@@ -103,12 +103,12 @@ function Art() {
       }
 
       { /* activeTab === 3 */ }
-      <AfterDark activeTab={activeTab} setActiveTab={setActiveTab} />
+      <AfterDark activeTab={activeTab} setActiveTab={setActiveTab} activateModal={activateModal} />
 
       { showModal && 
         <div className='Art-modal' >
           <XLg className='Art-modal-close' onClick={() => setShowModal(false)}/>
-          <img src={modalImg} alt={modalImgAlt} style={(isComicModal) ? {width: '100vw'} : {height: '100vh'}}/>
+          <img className={(isComicModal) ? 'Art-modal-comic' : ''} src={modalImg} alt={modalImgAlt} />
         </div>
       }
 

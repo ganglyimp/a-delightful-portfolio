@@ -38,6 +38,7 @@
 }
 .Art section img {
   cursor: pointer;
+  transition: width 0.3s;
 }
 
 .Art-character {
@@ -47,14 +48,27 @@
   width: 20vw;
   padding: 20px;
 }
+.Art-character img:hover {
+  width: 20.5vw;
+  transition: width 0.3s;
+}
 
 .Art-comic img {
   height: 100vh;
+  transition: height 0.3s;
+}
+.Art-comic img:hover {
+  height: 100.5vh;
+  transition: height 0.3s;
 }
 
 .Art-painting img {
   width: 25vw;
   padding: 20px;
+}
+.Art-painting img:hover {
+  width: 25.5vw;
+  transition: width 0.3s;
 }
 
 .Art-modal {
@@ -66,7 +80,13 @@
   min-height: 100vh;
   background-color: black;
   overflow-y: auto;
-  z-index: 2;
+  z-index: 3;
+}
+.Art-modal img {
+  height: 100vh;
+}
+.Art-modal-comic img {
+  width: 100vw;
 }
 .Art-modal-close {
   color: white;
@@ -78,8 +98,42 @@
 }
 
 @media (max-width: 600px) {
-  .Art {
-    height: max(100vh, fit-content);
-    min-height: 100vh;
+  .Art h1 {
+    font-size: 8vh;
+  }
+
+  .Art-tabs {
+    margin-top: 3vh;
+  }
+  .Art-tabs button {
+    font-size: 2.5vh;
+  }
+
+  .Art-character img {
+    width: 20vh;
+    padding: 10px;
+  }
+  .Art-character img:hover {
+    width: 20.5vh;
+  }
+
+  .Art-painting img {
+    width: 30vh;
+  }
+  .Art-painting img:hover {
+    width: 30.5vh;
+  }
+
+  .Art-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Art-modal img {
+    width: 100vw;
+    height: unset;
+  }
+  .Art-modal-close {
+    font-size: 5vh;
   }
 }

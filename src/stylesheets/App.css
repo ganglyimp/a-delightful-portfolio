@@ -59,5 +59,9 @@
     font-size: 4vh;
     margin: 10px;
   }
+
+  .header-buttons button:hover {
+    font-size: 4.5vh;
+  }
   
 }

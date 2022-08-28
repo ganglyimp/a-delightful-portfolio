@@ -47,22 +47,18 @@ function AfterDark(props) {
                      imgAlt: 'Cryptids & Creatures Cover'
                    }
                   ];
-  
-  const activateModal = (imgSrc, imgAlt) => {
-
-  };
 
   return (
     <div className={`AfterDark ${props.activeTab === 3 ? 'slide-in' : ''}`}>
       <ChevronLeft className='back-button' onClick={() => {props.setActiveTab(0)}}/>
-      <img src={AfterDarkHeader} alt='After Dark' />
+      <img className='AfterDark-header' src={AfterDarkHeader} alt='After Dark' />
 
       <div className='AfterDark-images'>
           { imgInfo && imgInfo.map((item) => {
               return(
                 <img src={item.imgSrc} 
                      alt={item.imgAlt} 
-                     onClick={() => {activateModal(item.imgSrc, item.imgAlt)}} 
+                     onClick={() => {props.activateModal(item.imgSrc, item.imgAlt, false)}}
                 />
               )
             })
