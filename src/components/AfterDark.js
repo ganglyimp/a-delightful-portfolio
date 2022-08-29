@@ -2,8 +2,6 @@ import '../stylesheets/AfterDark.css';
 
 import { ChevronLeft } from 'react-bootstrap-icons';
 
-import AfterDarkHeader from '../images/AfterDarkText.png';
-
 import CatWickCutie from '../images/weird/CatWickCutieCup.png';
 import CatWickLord from '../images/weird/CatwickOurLord.png';
 import Claustrophobic from '../images/weird/ClaustrophobicRedraw.png';
@@ -12,6 +10,9 @@ import CryingShow from '../images/weird/CryForTheShow.png';
 import GamingGranny from '../images/weird/GamingGrannyInTheTub.png';
 import ScaryDaisy from '../images/weird/Scary.png';
 import CryptidsCover from '../images/weird/SpookyCryptidsCreaturesPaintedCover.png';
+import HorrorClown from '../images/weird/HorrorClown.png';
+import Lemon from '../images/weird/Lemon.png';
+import Room from '../images/weird/Room.png';
 
 function AfterDark(props) {
   const imgInfo = [{
@@ -45,13 +46,28 @@ function AfterDark(props) {
                    {
                      imgSrc: CryptidsCover,
                      imgAlt: 'Cryptids & Creatures Cover'
+                   },
+                   {
+                    imgSrc: HorrorClown,
+                    imgAlt: 'Horror Clown'
+                   },
+                   {
+                    imgSrc: Lemon,
+                    imgAlt: 'Lemon'
+                   },
+                   {
+                    imgSrc: Room,
+                    imgAlt: 'Room'
                    }
                   ];
 
   return (
     <div className={`AfterDark ${props.activeTab === 3 ? 'slide-in' : ''}`}>
       <ChevronLeft className='back-button' onClick={() => {props.setActiveTab(0)}}/>
-      <img className='AfterDark-header' src={AfterDarkHeader} alt='After Dark' />
+
+      <div className='AfterDark-header'>
+        <h1>AFTER DARK</h1>
+      </div>
 
       <div className='AfterDark-images'>
           { imgInfo && imgInfo.map((item) => {

@@ -55,6 +55,7 @@
 
 .Art-comic img {
   height: 100vh;
+  margin: 10px;
   transition: height 0.3s;
 }
 .Art-comic img:hover {
@@ -82,10 +83,10 @@
   overflow-y: auto;
   z-index: 3;
 }
-.Art-modal img {
+.Art-modal-other {
   height: 100vh;
 }
-.Art-modal-comic img {
+.Art-modal-comic {
   width: 100vw;
 }
 .Art-modal-close {

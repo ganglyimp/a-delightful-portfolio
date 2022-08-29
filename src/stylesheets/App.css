@@ -3,19 +3,18 @@
 }
 
 .App-header {
-  background-image: url('../images/paintings/RansomsAtSunset.png');
+  background-image: url('../images/dayHeader.png');
   background-size: cover;
-  background-position: right;
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-color: #282c34;
 
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: black;
 }
 
 .App-header h1 {
@@ -27,13 +26,19 @@
 }
 
 .header-buttons button {
-  font-size: 4vw;
   margin-right: 10px;
-  background-color: white;
-  border-style: none;
-  mix-blend-mode: screen;
+  background: transparent;
+  border: none;
   cursor: pointer;
-  transition: font-size 0.3s;
+}
+
+.header-buttons img {
+  height: 15vh;
+  transition: height 0.3s;
+}
+.header-buttons img:hover {
+  height: 15.5vh;
+  transition: height 0.3s;
 }
 
 .header-buttons button:hover {

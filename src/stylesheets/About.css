@@ -1,32 +1,42 @@
 .About {
   height: 100vh;
-  background-color: #E8B284;
-  background-image: url('../images/SelfPortrait.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: #9B5E45;
+  background-image: url(../images/cardboardTexture.jpg);
+  background-size: cover;
   padding: 10px;
 }
 
 .About h1 {
   font-size: 10vw;
-  margin-left: 10vw; 
   margin-bottom: 0;
 }
 
-.About h2 {
-  margin-left: 15vw;
+.About-card {
+  height: 100%;
+  margin: 20px;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.About-card img {
+  width: 35vw;
+}
+
+.About-text {
+  height: 100%;
+  float: left;
+  margin: 20px;
 }
 
 .About-socials {
-  margin-left: 20vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.About-socials a {
-  padding-right: 100px;
-  color: #652C17;
-  font-size: 5vw;
+.About-socials img {
+  margin-right: 50px;
+  width: 6vw;
 }
 
 @media (max-width: 600px) {

@@ -23,9 +23,7 @@ function Animation() {
         </div>
 
         <div className='animation-video column'>
-          <iframe width="760" 
-                  height="515" 
-                  src={`https://www.youtube.com/embed/${currVideo}`} 
+          <iframe src={`https://www.youtube.com/embed/${currVideo}`} 
                   title="YouTube video player" 
                   frameborder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 

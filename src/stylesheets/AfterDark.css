@@ -6,7 +6,7 @@
   left: 0;
   text-align: center;
   color: white;
-  background: rgb(2,0,36,1);
+  background-color: rgb(2,0,36,1);
   overflow-y: auto;
   z-index: 2;
 
@@ -28,6 +28,22 @@
   left: 0;
   padding: 10px;
   cursor: pointer;
+}
+
+.AfterDark-header {
+  width: 100vw;
+  height: 40vh;
+  background-image: url('../images/afterDarkBG.png');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+}
+.AfterDark-header h1 {
+  margin: auto;
+  text-align: center;
+  font-size: 12vw;
 }
 
 .AfterDark-images {
