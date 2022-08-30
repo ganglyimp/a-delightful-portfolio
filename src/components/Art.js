@@ -3,8 +3,6 @@ import '../stylesheets/Art.css';
 
 import { XLg } from 'react-bootstrap-icons';
 
-import AfterDark from './AfterDark';
-
 // NOTE: Move image metadata into a JSON file to remove clutter.
 
 /* CHARACTER ART */
@@ -81,8 +79,6 @@ function Art() {
         <button className={activeTab === 1 ? 'active' : ''} type='button' onClick={() => {setActiveTab(1)}}>Comics</button>
         <b>•</b>
         <button className={activeTab === 2 ? 'active' : ''} type='button' onClick={() => {setActiveTab(2)}}>Paintings</button>
-        <b>•</b>
-        <button className={activeTab === 3 ? 'active' : ''} type='button' onClick={() => {setActiveTab(3)}}>After Dark</button>
       </div>
 
       { activeTab === 0 &&
@@ -126,9 +122,6 @@ function Art() {
           }
         </section>
       }
-
-      { /* activeTab === 3 */ }
-      <AfterDark activeTab={activeTab} setActiveTab={setActiveTab} activateModal={activateModal} />
 
       { showModal && 
         <div className='Art-modal' >

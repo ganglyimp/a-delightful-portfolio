@@ -29,13 +29,16 @@
 }
 
 .sidebar-content a {
+  text-decoration: none;
+}
+
+.sidebar-content b {
   padding: 15px;
   color: white;
   font-size: 4vw;
-  text-decoration: none;
   transition: color 0.3s;
 }
-.sidebar-content a:hover {
+.sidebar-content b:hover {
   color: #E8B284;
 }
 
@@ -55,7 +58,7 @@
     padding-top: 6vh;
   }
 
-  .sidebar-content a {
+  .sidebar-content b {
     font-size: 6vh;
   }
 }

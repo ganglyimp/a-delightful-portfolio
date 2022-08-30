@@ -1,4 +1,5 @@
 import { React, useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../stylesheets/Sidebar.css';
 
 import { List, XLg } from 'react-bootstrap-icons';
@@ -12,13 +13,25 @@ function Sidebar() {
         { sidebarExpand ? <XLg /> : <List /> }
       </button>
       <aside className={`sidebar-content ${sidebarExpand ? 'slide-in' : ''}`}>
-        <a href='#Home'>Home</a>
+        <Link to='/' onClick={() => {window.location.href='/#Home'}}>
+          <b>Home</b>
+        </Link>
         <br />
-        <a href='#About'>About</a>
+        <Link to='/#About' onClick={() => {window.location.href='/#About'}}>
+          <b>About</b>
+        </Link>
         <br />
-        <a href='#Art'>Art</a>
+        <Link to='/Art'>
+          <b>Art</b>
+        </Link>
         <br />
-        <a href='#Animation'>Animation</a>
+        <Link to='/Animation'>
+          <b>Animation</b>
+        </Link>
+        <br />
+        <Link to='/After-Dark'>
+          <b>After Dark</b>
+        </Link>
       </aside>
     </div>
   );

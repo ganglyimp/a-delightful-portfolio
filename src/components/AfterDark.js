@@ -1,7 +1,5 @@
 import '../stylesheets/AfterDark.css';
 
-import { ChevronLeft } from 'react-bootstrap-icons';
-
 import CatWickCutie from '../images/weird/CatWickCutieCup.png';
 import CatWickLord from '../images/weird/CatwickOurLord.png';
 import Claustrophobic from '../images/weird/ClaustrophobicRedraw.png';
@@ -62,8 +60,7 @@ function AfterDark(props) {
                   ];
 
   return (
-    <div className={`AfterDark ${props.activeTab === 3 ? 'slide-in' : ''}`}>
-      <ChevronLeft className='back-button' onClick={() => {props.setActiveTab(0)}}/>
+    <div className='AfterDark'>
 
       <div className='AfterDark-header'>
         <h1>AFTER DARK</h1>

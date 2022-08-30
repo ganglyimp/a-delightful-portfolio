@@ -81,6 +81,7 @@
   min-height: 100vh;
   background-color: black;
   overflow-y: auto;
+  overscroll-behavior: contain;
   z-index: 3;
 }
 .Art-modal-other {

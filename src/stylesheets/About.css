@@ -1,5 +1,6 @@
 .About {
   height: 100vh;
+  box-sizing: border-box;
   background-color: #9B5E45;
   background-image: url(../images/cardboardTexture.jpg);
   background-size: cover;
