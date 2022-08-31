@@ -3,6 +3,8 @@
   min-height: 100vh;
   padding: 10px;
   background-color: #C98373;
+  background-image: url(../images/cardboardBox.jpg);
+  background-size: contain;
 }
 
 .Art h1 {

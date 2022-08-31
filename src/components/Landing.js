@@ -1,5 +1,6 @@
 import { React } from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import '../stylesheets/Landing.css';
 
 import aboutButton from '../images/buttons/about.png';
@@ -8,10 +9,17 @@ import animationButton from '../images/buttons/animation.png';
 import MFButton from '../images/buttons/mediaFeed.png';
 
 import About from './About';
+import { slideVertical } from '../stylesheets/AnimationPresets';
 
 function Landing() {
   return (
-    <div className='Landing'>
+    <motion.div 
+      className='Landing' 
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={slideVertical}
+    >
       <header className='Landing-header' id='Home'>
         <h1>A Delightful Portfolio</h1>
 
@@ -41,7 +49,7 @@ function Landing() {
       </header>
 
       <About />
-    </div>
+    </motion.div>
   );
 }
 

@@ -1,12 +1,21 @@
 import { React, useState } from 'react';
+import { motion } from 'framer-motion';
 import '../stylesheets/Animation.css';
+
+import { slideVertical } from '../stylesheets/AnimationPresets';
 
 function Animation() {
   const youtubeIDs = ['2fcDqVS-P38', 'B8VZiynoKt4'];
   const [currVideo, setCurrVideo] = useState(youtubeIDs[0]);
 
   return (
-    <article className="Animation" id='Animation'>
+    <motion.article 
+      className="Animation" 
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={slideVertical}
+    >
       <h1>Animation</h1>
 
       <div className='animation-content'>
@@ -31,7 +40,7 @@ function Animation() {
           </iframe>
         </div>
       </div>
-    </article>
+    </motion.article>
   );
 }
 

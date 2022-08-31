@@ -1,7 +1,9 @@
 import { React, useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 import '../stylesheets/Art.css';
 
 import Lightbox from './Lightbox';
+import { slideVertical } from '../stylesheets/AnimationPresets';
 
 function Art() {
   
@@ -44,7 +46,13 @@ function Art() {
   };
 
   return (
-    <article className='Art' id='Art'>
+    <motion.article 
+      className='Art' 
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={slideVertical}
+    >
       <h1>Art |</h1>
 
       <div className='Art-tabs'>
@@ -106,7 +114,7 @@ function Art() {
         />
       }
 
-    </article>
+    </motion.article>
   );
 }
 

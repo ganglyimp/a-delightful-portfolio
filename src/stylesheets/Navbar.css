@@ -1,5 +1,5 @@
 .Navbar {
-  color: white;
+  color: black;
   position: absolute;
   z-index: 1;
 }
@@ -29,8 +29,11 @@
   position: fixed;
   right: 0;
   text-align: center;
-  padding: 10px;
-  background-color: #93553C;
+  padding: 20px;
+  background-color: transparent;
+  background-image: url(../images/cardboardPanel.jpg);
+  background-position: top;
+  background-size: cover;
   overflow: hidden;
 
   transform: translateY(-100%);
@@ -44,12 +47,12 @@
 
 .navbar-content b {
   padding: 15px;
-  color: white;
+  color: black;
   font-size: 4vw;
   transition: color 0.3s;
 }
 .navbar-content b:hover {
-  color: #E8B284;
+  color: grey;
 }
 
 .slide-in {

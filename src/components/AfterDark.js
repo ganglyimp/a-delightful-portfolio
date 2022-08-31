@@ -1,7 +1,9 @@
 import { React, useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import '../stylesheets/AfterDark.css';
 
 import Lightbox from './Lightbox';
+import { slideVertical } from '../stylesheets/AnimationPresets';
 
 function AfterDark() {
   const [imgData, setImgData] = useState([]);
@@ -37,7 +39,13 @@ function AfterDark() {
   };
 
   return (
-    <article className='AfterDark'>
+    <motion.article 
+      className='AfterDark'
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={slideVertical}
+    >
       <header className='AfterDark-header'>
         <h1>AFTER DARK</h1>
       </header>
@@ -62,7 +70,7 @@ function AfterDark() {
           isComic={isComicModal}
         />
       }
-    </article>
+    </motion.article>
   );
 }
 

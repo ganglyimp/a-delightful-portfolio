@@ -1,5 +1,6 @@
 import { React } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 import './stylesheets/App.css';
 
 import Navbar from './components/Navbar';
@@ -9,16 +10,20 @@ import Landing from './components/Landing';
 import AfterDark from './components/AfterDark';
 
 function App() {
+  const location = useLocation();
+
   return (
     <div className='App'>
       <Navbar />
 
-      <Routes>
-        <Route path='/' element={<Landing />} />
-        <Route path='/Art' element={<Art />} />
-        <Route path='/Animation' element={<Animation />} />
-        <Route path='/After-Dark' element={<AfterDark />} />
-      </Routes>
+      <AnimatePresence exitBeforeEnter={true}>
+        <Routes location={location} key={location.pathname}>
+          <Route path='/' element={<Landing />} />
+          <Route path='/Art' element={<Art />} />
+          <Route path='/Animation' element={<Animation />} />
+          <Route path='/After-Dark' element={<AfterDark />} />
+        </Routes>
+      </AnimatePresence>
     </div>
   );
 }
