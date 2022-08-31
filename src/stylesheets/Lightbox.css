@@ -1,0 +1,42 @@
+.Lightbox {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  background-color: black;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  z-index: 3;
+}
+.Lightbox-other {
+  height: 100vh;
+}
+.Lightbox-comic {
+  width: 100vw;
+}
+.Lightbox-close {
+  color: white;
+  position: fixed;
+  top: 10px;
+  right: 25px;
+  font-size: 5vw;
+  cursor: pointer;
+  z-index: 3;
+}
+
+@media (max-width: 600px) {
+  .Lightbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Lightbox img {
+    width: 100vw;
+    height: unset;
+  }
+  .Lightbox-close {
+    font-size: 5vh;
+  }
+}

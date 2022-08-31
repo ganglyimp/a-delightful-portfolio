@@ -1,10 +1,10 @@
-.Sidebar {
+.Navbar {
   color: white;
   position: absolute;
   z-index: 1;
 }
 
-.sidebar-button {
+.navbar-button {
   position: fixed;
   right: 0;
   color: black;
@@ -14,51 +14,61 @@
   cursor: pointer;
   z-index: 2;
 }
-.sidebar-content {
-  height: 100vh;
+
+.navbar-button svg {
+  transition: all 0.2s linear;
+}
+
+.active svg {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}
+
+.navbar-content {
+  width: 100vw;
   position: fixed;
   right: 0;
-  text-align: right;
-  padding-top: 5vw;
+  text-align: center;
+  padding: 10px;
   background-color: #93553C;
   overflow: hidden;
 
-  transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  transition: transform 0.5s ease-in-out;
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
 }
 
-.sidebar-content a {
+.navbar-content a {
   text-decoration: none;
 }
 
-.sidebar-content b {
+.navbar-content b {
   padding: 15px;
   color: white;
   font-size: 4vw;
   transition: color 0.3s;
 }
-.sidebar-content b:hover {
+.navbar-content b:hover {
   color: #E8B284;
 }
 
 .slide-in {
-  transform: translateX(0);
-  -webkit-transform: translateX(0);
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
 }
 
 @media (max-width: 600px) {
-  .sidebar-button {
+  .navbar-button {
     font-size: 6vh;
     color: white;
   }
 
-  .sidebar-content {
+  .navbar-content {
     width: 90vw;
     padding-top: 6vh;
   }
 
-  .sidebar-content b {
+  .navbar-content b {
     font-size: 6vh;
   }
 }

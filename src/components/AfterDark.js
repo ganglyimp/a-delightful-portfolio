@@ -1,83 +1,68 @@
+import { React, useState, useEffect } from 'react';
 import '../stylesheets/AfterDark.css';
 
-import CatWickCutie from '../images/weird/CatWickCutieCup.png';
-import CatWickLord from '../images/weird/CatwickOurLord.png';
-import Claustrophobic from '../images/weird/ClaustrophobicRedraw.png';
-import Clavier from '../images/weird/Clavier.png';
-import CryingShow from '../images/weird/CryForTheShow.png';
-import GamingGranny from '../images/weird/GamingGrannyInTheTub.png';
-import ScaryDaisy from '../images/weird/Scary.png';
-import CryptidsCover from '../images/weird/SpookyCryptidsCreaturesPaintedCover.png';
-import HorrorClown from '../images/weird/HorrorClown.png';
-import Lemon from '../images/weird/Lemon.png';
-import Room from '../images/weird/Room.png';
+import Lightbox from './Lightbox';
 
-function AfterDark(props) {
-  const imgInfo = [{
-                    imgSrc: CatWickCutie,
-                    imgAlt: 'Cat Wick & Cutie Cup'
-                   },
-                   {
-                     imgSrc: CatWickLord,
-                     imgAlt: 'Cat Wick, Our Lord and Savior'
-                   },
-                   {
-                     imgSrc: Claustrophobic,
-                     imgAlt: 'Claustrophobic Redraw'
-                   },
-                   {
-                     imgSrc: Clavier,
-                     imgAlt: 'The Endless Clavier'
-                   },
-                   {
-                     imgSrc: CryingShow,
-                     imgAlt: 'Crying for the Show'
-                   },
-                   {
-                     imgSrc: GamingGranny,
-                     imgAlt: 'Gaming Granny in the Tub'
-                   },
-                   {
-                     imgSrc: ScaryDaisy,
-                     imgAlt: 'Scary'
-                   },
-                   {
-                     imgSrc: CryptidsCover,
-                     imgAlt: 'Cryptids & Creatures Cover'
-                   },
-                   {
-                    imgSrc: HorrorClown,
-                    imgAlt: 'Horror Clown'
-                   },
-                   {
-                    imgSrc: Lemon,
-                    imgAlt: 'Lemon'
-                   },
-                   {
-                    imgSrc: Room,
-                    imgAlt: 'Room'
-                   }
-                  ];
+function AfterDark() {
+  const [imgData, setImgData] = useState([]);
+
+  const [showModal, setShowModal] = useState(false);
+  const [modalImg, setModalImg] = useState();
+  const [modalImgAlt, setModalImgAlt] = useState('');
+  const [isComicModal, setIsComicModal] = useState(false);
+
+  useEffect(() => {
+    getArtData();
+  }, []);
+
+  const getArtData = () => {
+    fetch('artData.json', {
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json',
+            }
+          }
+    ).then(res => {
+      return res.json();
+    }).then((jsonFile) => {
+        setImgData(jsonFile.afterDark)
+    })
+  };
+
+  const activateModal = (imgSrc, imgAlt, isComic) => {
+    setShowModal(true);
+    setModalImg(imgSrc);
+    setModalImgAlt(imgAlt);
+    setIsComicModal(isComic);
+  };
 
   return (
-    <div className='AfterDark'>
-
-      <div className='AfterDark-header'>
+    <article className='AfterDark'>
+      <header className='AfterDark-header'>
         <h1>AFTER DARK</h1>
-      </div>
+      </header>
 
       <div className='AfterDark-images'>
-          { imgInfo && imgInfo.map((item) => {
-              return(
-                <img src={item.imgSrc} 
-                     alt={item.imgAlt} 
-                     onClick={() => {props.activateModal(item.imgSrc, item.imgAlt, false)}}
-                />
-              )
-            })
-          }
-        </div>
-    </div>
+        { imgData && imgData.map((item) => {
+            return(
+              <img src={process.env.PUBLIC_URL + item.imgSrc} 
+                   alt={item.imgAlt} 
+                   onClick={() => {activateModal(item.imgSrc, item.imgAlt, false)}}
+              />
+            )
+          })
+        }
+      </div>
+
+      { showModal && 
+        <Lightbox 
+          setShowModal={setShowModal} 
+          modalImg={modalImg} 
+          modalAlt={modalImgAlt} 
+          isComic={isComicModal}
+        />
+      }
+    </article>
   );
 }
 

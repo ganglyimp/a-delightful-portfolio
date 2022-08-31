@@ -2,7 +2,7 @@ import { React } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './stylesheets/App.css';
 
-import Sidebar from './components/Sidebar';
+import Navbar from './components/Navbar';
 import Art from './components/Art';
 import Animation from './components/Animation';
 import Landing from './components/Landing';
@@ -11,7 +11,7 @@ import AfterDark from './components/AfterDark';
 function App() {
   return (
     <div className='App'>
-      <Sidebar />
+      <Navbar />
 
       <Routes>
         <Route path='/' element={<Landing />} />

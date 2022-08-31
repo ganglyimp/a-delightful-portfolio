@@ -12,7 +12,7 @@ function About() {
       <div className='About-card'>
         <img src={portraitCard} alt='Portrait Card' />
       </div>
-
+      
       <div className='About-text'>
         <h1>About Me</h1>
         <h2>Comic Artist • Animator • Illustrator</h2>
