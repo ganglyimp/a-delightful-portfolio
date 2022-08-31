@@ -38,7 +38,7 @@
 
   transform: translateY(-100%);
   -webkit-transform: translateY(-100%);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
 }
 
 .navbar-content a {
@@ -56,6 +56,9 @@
 }
 
 .slide-in {
+  box-shadow: 0 10px 6px -6px #111;
+  -webkit-box-shadow: 0 10px 6px -6px #111;
+
   transform: translateY(0);
   -webkit-transform: translateY(0);
 }
