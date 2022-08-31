@@ -53,7 +53,7 @@ function Art() {
       exit="out"
       variants={slideVertical}
     >
-      <h1>Art |</h1>
+      <h1>Art</h1>
 
       <div className='Art-tabs'>
         <button className={activeTab === 0 ? 'active' : ''} type='button' onClick={() => {setActiveTab(0)}}>Character Art</button>

@@ -5,19 +5,15 @@
   background-color: #C98373;
   background-image: url(../images/cardboardBox.jpg);
   background-size: contain;
+  text-align: center;
 }
 
 .Art h1 {
   font-size: 8vw;
-  float: left;
   margin-top: 10px;
   margin-bottom: 0;
 }
 
-.Art-tabs {
-  text-align: left;
-  margin-top: 5vh;
-}
 .Art-tabs button {
   font-size: 4vw;
   background-color: transparent;
@@ -36,9 +32,17 @@
 }
 
 .Art section {
-  margin-top: 8vw;
+  margin-top: 20px;
 }
 .Art section img {
+  filter: drop-shadow(2px 2px 0 white) 
+          drop-shadow(-2px 2px 0 white)
+          drop-shadow(2px -2px 0 white) 
+          drop-shadow(-2px -2px 0 white);
+  -webkit-filter: drop-shadow(2px 2px 0 white) 
+                  drop-shadow(-2px 2px 0 white)
+                  drop-shadow(2px -2px 0 white) 
+                  drop-shadow(-2px -2px 0 white);
   cursor: pointer;
   transition: width 0.3s;
 }
@@ -48,7 +52,7 @@
 }
 .Art-character img {
   width: 20vw;
-  padding: 20px;
+  margin: 20px;
 }
 .Art-character img:hover {
   width: 20.5vw;
