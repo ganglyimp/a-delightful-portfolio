@@ -12,6 +12,13 @@ function Lightbox(props) {
            src={process.env.PUBLIC_URL + props.modalImg} 
            alt={props.modalAlt} 
        />
+
+      { !props.isComic &&
+        <div className='Lightbox-caption'>
+          <b>{props.modalAlt}</b>
+          <p>This is a caption for the image. I think the image is very nice.</p>
+        </div>
+      }
     </div>
   );
 }

@@ -12,7 +12,8 @@
 }
 
 .Lightbox-other {
-  height: 100vh;
+  height: 85vh;
+  padding: 10px;
 }
 
 .Lightbox-comic {
@@ -27,6 +28,10 @@
   font-size: 5vw;
   cursor: pointer;
   z-index: 4;
+}
+
+.Lightbox-caption {
+  color: white;
 }
 
 @media (max-width: 600px) {
