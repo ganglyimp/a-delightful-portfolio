@@ -5,7 +5,7 @@
   left: 0;
   text-align: center;
   color: white;
-  background-color: rgb(2,0,36,1);
+  background-color: black;
   overflow-y: auto;
 }
 
@@ -22,12 +22,17 @@
 .AfterDark-header {
   width: 100vw;
   height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
   background-image: url('../images/afterDarkBG.png');
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
-  background-attachment:scroll;
+  background-attachment: scroll;
   text-align: center;
+  z-index: 1;
 }
 .AfterDark-header h1 {
   margin: auto;
@@ -37,6 +42,8 @@
 
 .AfterDark-images {
   margin: 0;
+  position: relative;
+  z-index: 1;
 }
 .AfterDark-images img {
   width: 25vw;

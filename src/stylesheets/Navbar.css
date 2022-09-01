@@ -1,7 +1,7 @@
 .Navbar {
   color: black;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
 }
 
 .navbar-button {
@@ -12,7 +12,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  z-index: 2;
+  z-index: 3;
 }
 
 .navbar-button svg {

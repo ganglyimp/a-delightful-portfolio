@@ -1,11 +1,13 @@
 import { React, useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import '../stylesheets/AfterDark.css';
+import '../stylesheets/Fireflies.scss';
 
 import Lightbox from './Lightbox';
 import { slideVertical } from '../stylesheets/AnimationPresets';
 
 function AfterDark() {
+  const fireflyNum = 20; //# of animated fireflies
   const [imgData, setImgData] = useState([]);
 
   const [showModal, setShowModal] = useState(false);
@@ -46,6 +48,12 @@ function AfterDark() {
       exit="out"
       variants={slideVertical}
     >
+    <div className='firefly-group'>
+      {
+        [...Array(fireflyNum)].map((e, i) => <div className='firefly' key={i}></div>)
+      }
+    </div>
+
       <header className='AfterDark-header'>
         <h1>AFTER DARK</h1>
       </header>

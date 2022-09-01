@@ -5,7 +5,8 @@ export const slideVertical = {
   },
   in: {
     opacity: 1,
-    y: 0
+    y: 0,
+    transition: "0.3s"
   },
   out: {
     opacity: 0,

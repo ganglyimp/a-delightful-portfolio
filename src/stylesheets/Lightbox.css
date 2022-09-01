@@ -8,7 +8,7 @@
   background-color: black;
   overflow-y: auto;
   overscroll-behavior: contain;
-  z-index: 3;
+  z-index: 4;
 }
 .Lightbox-other {
   height: 100vh;
@@ -23,7 +23,7 @@
   right: 25px;
   font-size: 5vw;
   cursor: pointer;
-  z-index: 3;
+  z-index: 4;
 }
 
 @media (max-width: 600px) {
