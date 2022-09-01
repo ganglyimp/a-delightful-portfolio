@@ -1,6 +1,6 @@
 import { React, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import '../stylesheets/Art.css';
+import '../stylesheets/Art.scss';
 
 import Lightbox from './Lightbox';
 import { slideVertical } from '../stylesheets/AnimationPresets';

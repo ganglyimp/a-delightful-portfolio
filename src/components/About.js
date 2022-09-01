@@ -1,4 +1,4 @@
-import '../stylesheets/About.css';
+import '../stylesheets/About.scss';
 
 //import SelfPortrait from '../images/SelfPortrait.png';
 import portraitCard from '../images/portraitCard.png';

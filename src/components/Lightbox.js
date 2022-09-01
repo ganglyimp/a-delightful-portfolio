@@ -1,5 +1,5 @@
 import { React} from 'react';
-import '../stylesheets/Lightbox.css';
+import '../stylesheets/Lightbox.scss';
 
 import { XLg } from 'react-bootstrap-icons';
 

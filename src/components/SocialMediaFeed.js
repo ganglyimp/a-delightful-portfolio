@@ -1,4 +1,4 @@
-import './stylesheets/SocialMediaFeed.css';
+import './stylesheets/SocialMediaFeed.scss';
 
 function SocialMediaFeed() {
   return (

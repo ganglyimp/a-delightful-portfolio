@@ -13,10 +13,10 @@
   border: none;
   cursor: pointer;
   z-index: 3;
-}
 
-.navbar-button svg {
-  transition: all 0.2s linear;
+  svg {
+    transition: all 0.2s linear;
+  }
 }
 
 .active svg {
@@ -39,20 +39,20 @@
   transform: translateY(-100%);
   -webkit-transform: translateY(-100%);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s;
-}
 
-.navbar-content a {
-  text-decoration: none;
-}
+  a {
+    text-decoration: none;
+  }
 
-.navbar-content b {
-  padding: 15px;
-  color: black;
-  font-size: 4vw;
-  transition: color 0.3s;
-}
-.navbar-content b:hover {
-  color: grey;
+  b {
+    padding: 15px;
+    color: black;
+    font-size: 4vw;
+    transition: color 0.3s;
+  }
+  b:hover {
+    color: grey;
+  }
 }
 
 .slide-in {
@@ -72,9 +72,9 @@
   .navbar-content {
     width: 90vw;
     padding-top: 6vh;
-  }
 
-  .navbar-content b {
-    font-size: 6vh;
+    b {
+      font-size: 6vh;
+    }
   }
 }

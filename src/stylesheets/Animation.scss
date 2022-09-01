@@ -1,15 +1,14 @@
 .Animation {
-  height: max(100vh, fit-content);
   min-height: 100vh;
   padding: 10px;
   background-color: darkslateblue;
   color: white;
   text-align: center;
-}
 
-.Animation h1 {
-  margin: 0;
-  margin-bottom: 10px;
+  h1 {
+    margin: 0;
+    margin-bottom: 10px;
+  }
 }
 
 .animation-content {
@@ -28,16 +27,17 @@
 .animation-thumbnails {
   display: flex;
   flex-direction: column;
-}
-.animation-thumbnails img {
-  width: 20vw;
-  padding: 10px;
-  cursor: pointer;
-  transition: width 0.3s;
-}
-.animation-thumbnails img:hover {
-  width: 20.5vw;
-  transition: width 0.3s;
+
+  img {
+    width: 20vw;
+    padding: 10px;
+    cursor: pointer;
+    transition: width 0.3s;
+  }
+  img:hover {
+    width: 20.5vw;
+    transition: width 0.3s;
+  }
 }
 
 @media (max-width: 600px) {

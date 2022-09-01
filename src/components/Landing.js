@@ -1,7 +1,7 @@
 import { React } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import '../stylesheets/Landing.css';
+import '../stylesheets/Landing.scss';
 
 import aboutButton from '../images/buttons/about.png';
 import artButton from '../images/buttons/art.png';

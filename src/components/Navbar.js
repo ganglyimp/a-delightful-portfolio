@@ -1,6 +1,6 @@
 import { React, useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../stylesheets/Navbar.css';
+import '../stylesheets/Navbar.scss';
 
 import { ChevronDown } from 'react-bootstrap-icons';
 

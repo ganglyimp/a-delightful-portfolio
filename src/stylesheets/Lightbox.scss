@@ -10,12 +10,15 @@
   overscroll-behavior: contain;
   z-index: 4;
 }
+
 .Lightbox-other {
   height: 100vh;
 }
+
 .Lightbox-comic {
   width: 100vw;
 }
+
 .Lightbox-close {
   color: white;
   position: fixed;
@@ -31,11 +34,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    img {
+      width: 100vw;
+      height: unset;
+    }
   }
-  .Lightbox img {
-    width: 100vw;
-    height: unset;
-  }
+
   .Lightbox-close {
     font-size: 5vh;
   }

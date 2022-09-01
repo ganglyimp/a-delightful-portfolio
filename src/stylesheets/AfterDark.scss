@@ -7,16 +7,16 @@
   color: white;
   background-color: black;
   overflow-y: auto;
-}
 
-.AfterDark .back-button {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px;
-  cursor: pointer;
+  .back-button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    cursor: pointer;
+  }
 }
 
 .AfterDark-header {
@@ -33,27 +33,29 @@
   background-attachment: scroll;
   text-align: center;
   z-index: 1;
-}
-.AfterDark-header h1 {
-  margin: auto;
-  text-align: center;
-  font-size: 12vw;
+
+  h1 {
+    margin: auto;
+    text-align: center;
+    font-size: 12vw;
+  }
 }
 
 .AfterDark-images {
   margin: 0;
   position: relative;
   z-index: 1;
-}
-.AfterDark-images img {
-  width: 25vw;
-  padding: 10px;
-  cursor: pointer;
-  transition: width 0.3s;
-}
-.AfterDark-images img:hover {
-  width: 25.5vw;
-  transition: width 0.3s;
+
+  img {
+    width: 25vw;
+    padding: 10px;
+    cursor: pointer;
+    transition: width 0.3s;
+  }
+  img:hover {
+    width: 25.5vw;
+    transition: width 0.3s;
+  }
 }
 
 @media (max-width: 600px) {
@@ -61,12 +63,14 @@
     width: 80vw;
   }
 
-  .AfterDark-images img {
+  .AfterDark-images {
+    img {
     width: 20vh;
     transition: width 0.3s;
-  }
-  .AfterDark-images img:hover {
-    width: 20.5vh;
-    transition: width 0.3s;
-  }
+    }
+    img:hover {
+      width: 20.5vh;
+      transition: width 0.3s;
+    }
+}
 }
