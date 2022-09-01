@@ -65,14 +65,50 @@
 }
 
 .Art-comic {
-  img {
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  .Art-comic-container {
+    width: 20vw;
+    height: 20vw;
     margin: 10px;
-    transition: height 0.3s;
+    position: relative;
+    float: left;
+    border: solid white 4px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+    transition: width 0.3s, height 0.3s;
+
+    b {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: transparent;
+      transition: color 0.3s;
+    }
+  }
+  .Art-comic-container:hover {
+    width: 20.5vw;
+    height: 20.5vw;
+    transition: width 0.3s, height 0.3s;
+
+    b {
+      color: white;
+      transition: color 0.3s;
+    }
+  }
+
+  img {
+    width: 20vw;
+    opacity: 1;
+    transition: width 0.3s, opacity 0.3s;
   }
   img:hover {
-    height: 100.5vh;
-    transition: height 0.3s;
+    width: 20.5vw;
+    opacity: 0.7;
+    transition: width 0.3s, opacity 0.3s;
   }
 }
 

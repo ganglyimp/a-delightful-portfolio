@@ -81,10 +81,13 @@ function Art() {
         <section className='Art-comic'>
           { comicArt && comicArt.map((item) => {
               return(
-                <img src={process.env.PUBLIC_URL + item.imgSrc} 
-                     alt={item.imgAlt} 
-                     onClick={() => {activateModal(item.imgSrc, item.imgAlt, true)}} 
-                />
+                <div className='Art-comic-container'>
+                  <img src={process.env.PUBLIC_URL + item.imgSrc} 
+                       alt={item.imgAlt} 
+                       onClick={() => {activateModal(item.imgSrc, item.imgAlt, true)}} 
+                  />
+                  <b>{item.imgAlt}</b>
+                </div>
               )
             })
           }
