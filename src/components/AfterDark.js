@@ -48,14 +48,12 @@ function AfterDark() {
       exit="out"
       variants={slideVertical}
     >
-    <div className='firefly-group'>
-      {
-        [...Array(fireflyNum)].map((e, i) => <div className='firefly' key={i}></div>)
-      }
-    </div>
-
       <header className='AfterDark-header'>
         <h1>AFTER DARK</h1>
+
+        <div className='firefly-group'>
+          { [...Array(fireflyNum)].map((e, i) => <div className='firefly' key={i}></div>) }
+        </div>
       </header>
 
       <div className='AfterDark-images'>

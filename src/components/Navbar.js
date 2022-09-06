@@ -18,10 +18,10 @@ function Navbar() {
       </button>
 
       <aside className={`navbar-content ${navbarExpand ? 'slide-in' : ''}`}>
-        <Link to='/' onClick={() => {window.location.href='/#Home'; setNavbarExpand(false)}}>
+        <Link to='/' onClick={() => {setNavbarExpand(false)}}>
           <b>Home</b>
         </Link>
-        <Link to='/#About' onClick={() => {window.location.href='/#About'; setNavbarExpand(false)}}>
+        <Link to='/#About' onClick={() => {setNavbarExpand(false)}}>
           <b>About</b>
         </Link>
         <Link to='/Art' onClick={() => {setNavbarExpand(false)}}>

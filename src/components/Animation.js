@@ -3,9 +3,11 @@ import { motion } from 'framer-motion';
 import '../stylesheets/Animation.scss';
 
 import { slideVertical } from '../stylesheets/AnimationPresets';
+import { ChevronLeft, ChevronRight } from 'react-bootstrap-icons';
 
 function Animation() {
   const youtubeIDs = ['2fcDqVS-P38', 'B8VZiynoKt4'];
+  const youtubeTitles = ['Crushed Out on Soda Beach', 'Weird Little Beast']
   const [currVideo, setCurrVideo] = useState(youtubeIDs[0]);
 
   return (

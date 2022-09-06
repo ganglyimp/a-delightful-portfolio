@@ -24,7 +24,7 @@ function Landing() {
         <h1>A Delightful Portfolio</h1>
 
         <div className='header-buttons'>
-          <button type='button' onClick={() => {window.location.href='#About'}}>
+          <button type='button' onClick={() => {window.location.href='/a-delightful-portfolio#/#About'}}>
             <img src={aboutButton} alt='About' />
           </button>
 
@@ -35,13 +35,13 @@ function Landing() {
           </button>
 
           <button type='button'>
-            <Link to='./Animation'>
+            <Link to='/Animation'>
               <img src={animationButton} alt='Animation' />
             </Link>
           </button>
 
           <button type='button'>
-            <Link to='./After-Dark'>
+            <Link to='/After-Dark'>
               <img src={MFButton} alt='Media Feed' />
             </Link>
           </button>
