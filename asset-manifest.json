@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/a-delightful-portfolio/static/css/main.95c4ae44.css",
-    "main.js": "/a-delightful-portfolio/static/js/main.869cae2a.js",
+    "main.css": "/a-delightful-portfolio/static/css/main.5fa2171b.css",
+    "main.js": "/a-delightful-portfolio/static/js/main.84a93632.js",
     "static/js/787.b92d0419.chunk.js": "/a-delightful-portfolio/static/js/787.b92d0419.chunk.js",
     "static/media/afterDarkBG.png": "/a-delightful-portfolio/static/media/afterDarkBG.5b0062a4196a2c4b576d.png",
     "static/media/dayHeader.png": "/a-delightful-portfolio/static/media/dayHeader.6a0b62714aa10852c03f.png",
@@ -13,12 +13,12 @@
     "static/media/twitter.png": "/a-delightful-portfolio/static/media/twitter.2a1ba35a53039f4aac43.png",
     "static/media/youtube.png": "/a-delightful-portfolio/static/media/youtube.ccaccd7e64b69dd1d645.png",
     "index.html": "/a-delightful-portfolio/index.html",
-    "main.95c4ae44.css.map": "/a-delightful-portfolio/static/css/main.95c4ae44.css.map",
-    "main.869cae2a.js.map": "/a-delightful-portfolio/static/js/main.869cae2a.js.map",
+    "main.5fa2171b.css.map": "/a-delightful-portfolio/static/css/main.5fa2171b.css.map",
+    "main.84a93632.js.map": "/a-delightful-portfolio/static/js/main.84a93632.js.map",
     "787.b92d0419.chunk.js.map": "/a-delightful-portfolio/static/js/787.b92d0419.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.95c4ae44.css",
-    "static/js/main.869cae2a.js"
+    "static/css/main.5fa2171b.css",
+    "static/js/main.84a93632.js"
   ]
 }
