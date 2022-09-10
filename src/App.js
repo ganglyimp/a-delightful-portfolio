@@ -1,4 +1,4 @@
-import { React } from 'react';
+import { React, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import './stylesheets/App.scss';
@@ -11,6 +11,22 @@ import AfterDark from './components/AfterDark';
 
 function App() {
   const location = useLocation();
+
+  useEffect(() => {
+    if(location.hash === '') {
+      window.scrollTo(0, 0);
+    }
+    else {
+      setTimeout(() => {
+        let sectionID = location.hash.replace('#', '');
+        const section = document.getElementById(sectionID);
+        
+        if(section) {
+          section.scrollIntoView();
+        }
+      }, 0);
+    }
+  }, [location])
 
   return (
     <div className='App'>

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import '../stylesheets/Art.scss';
 
 import Lightbox from './Lightbox';
-import { slideVertical } from '../stylesheets/AnimationPresets';
+import { slideVertical, artLoadIn } from '../stylesheets/AnimationPresets';
 
 function Art() {
   
@@ -67,9 +67,15 @@ function Art() {
         <section className='Art-character'>
           { characterArt && characterArt.map((item) => {
               return(
-                <img src={process.env.PUBLIC_URL + item.imgSrc} 
-                     alt={item.imgAlt} 
-                     onClick={() => {activateModal(item.imgSrc, item.imgAlt, false)}} 
+                <motion.img 
+                  src={process.env.PUBLIC_URL + item.imgSrc} 
+                  alt={item.imgAlt} 
+                  onClick={() => {activateModal(item.imgSrc, item.imgAlt, false)}} 
+                  
+                  variants={artLoadIn}
+                  initial='initial'
+                  animate='in'
+                  exit='out'
                 />
               )
             })
@@ -82,9 +88,15 @@ function Art() {
           { comicArt && comicArt.map((item) => {
               return(
                 <div className='Art-comic-container'>
-                  <img src={'https://drive.google.com/uc?export=view&id=' + item.gDriveID} 
-                       alt={item.imgAlt} 
-                       onClick={() => {activateModal(item.imgSrc, item.imgAlt, true)}} 
+                  <motion.img 
+                    src={'https://drive.google.com/uc?export=view&id=' + item.gDriveID} 
+                    alt={item.imgAlt} 
+                    onClick={() => {activateModal(item.imgSrc, item.imgAlt, true)}}
+
+                    variants={artLoadIn}
+                    initial='initial'
+                    animate='in'
+                    exit='out'
                   />
                   <b>{item.imgAlt}</b>
                 </div>
@@ -98,9 +110,15 @@ function Art() {
         <section className='Art-painting'>
           { paintingArt && paintingArt.map((item) => {
               return(
-                <img src={process.env.PUBLIC_URL + item.imgSrc} 
-                     alt={item.imgAlt} 
-                     onClick={() => {activateModal(item.imgSrc, item.imgAlt, false)}} 
+                <motion.img 
+                  src={process.env.PUBLIC_URL + item.imgSrc} 
+                  alt={item.imgAlt} 
+                  onClick={() => {activateModal(item.imgSrc, item.imgAlt, false)}} 
+
+                  variants={artLoadIn}
+                  initial='initial'
+                  animate='in'
+                  exit='out'
                 />
               )
             })

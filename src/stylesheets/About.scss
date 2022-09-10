@@ -39,6 +39,11 @@
   img {
     margin-right: 50px;
     width: 6vw;
+    transition: width 0.3s;
+  }
+  img:hover {
+    width: 6.5vw;
+    transition: width 0.3s;
   }
 }
 
@@ -74,6 +79,11 @@
 
     img {
       width: 6vh;
+      transition: width 0.3s;
+    }
+    img:hover {
+      width: 6.5vh;
+      transition: width 0.3s;
     }
   }
 }

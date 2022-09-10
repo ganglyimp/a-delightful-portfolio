@@ -2,7 +2,7 @@ import { React, useState } from 'react';
 import { motion } from 'framer-motion';
 import '../stylesheets/Animation.scss';
 
-import { slideVertical, slideHorizontal } from '../stylesheets/AnimationPresets';
+import { slideVertical, fakeCarousel } from '../stylesheets/AnimationPresets';
 import { ChevronLeft, ChevronRight } from 'react-bootstrap-icons';
 
 function Animation() {
@@ -31,7 +31,7 @@ function Animation() {
         custom={direction}
         initial={false}
         animate='change'
-        variants={slideHorizontal}
+        variants={fakeCarousel}
       >
         { (videoIndex > 0) &&
           <ChevronRight onClick={() => {handleVideoClick(-1)}} />

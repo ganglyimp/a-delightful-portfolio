@@ -24,8 +24,10 @@ function Landing() {
         <h1>A Delightful Portfolio</h1>
 
         <div className='header-buttons'>
-          <button type='button' onClick={() => {window.location.href='/a-delightful-portfolio/#/#About'}}>
-            <img src={aboutButton} alt='About' />
+          <button type='button'>
+            <Link to='/#About'>
+              <img src={aboutButton} alt='About' />
+            </Link>
           </button>
 
           <button type='button'>

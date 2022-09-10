@@ -14,9 +14,21 @@ export const slideVertical = {
   }
 };
 
-export const slideHorizontal = {
+export const fakeCarousel = {
   change: (direction) => ({
     x: direction > 0 ? [0, -window.innerWidth, window.innerWidth, 0] : [0, window.innerWidth, -window.innerWidth, 0],
     opacity: [null, 0, 0, 1],
   })
-}
+};
+
+export const artLoadIn = {
+  initial: {
+    opacity: 0
+  },
+  in: {
+    opacity: 1
+  },
+  out: {
+    opacity: 0
+  }
+};
