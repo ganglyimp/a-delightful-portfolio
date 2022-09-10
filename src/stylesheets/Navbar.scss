@@ -16,6 +16,14 @@
 
   svg {
     transition: all 0.2s linear;
+    filter: drop-shadow(1px 1px 0 white) 
+              drop-shadow(-1px 1px 0 white)
+              drop-shadow(1px -1px 0 white) 
+              drop-shadow(-1px -1px 0 white);
+      -webkit-filter: drop-shadow(1px 1px 0 white) 
+                      drop-shadow(-1px 1px 0 white)
+                      drop-shadow(1px -1px 0 white) 
+                      drop-shadow(-1px -1px 0 white);
   }
 }
 

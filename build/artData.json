@@ -1,0 +1,130 @@
+{
+  "character": [
+    { 
+      "imgSrc": "/images/character/DnDThunder.png", 
+      "imgAlt": "DnD Thunder" 
+    },
+    { 
+      "imgSrc": "/images/character/TheDarkPrinceFamoraxAbaddonFurcifer.png", 
+      "imgAlt": "The Dark Prince Famorax Addon Furcifer Rendition" 
+    },
+    { 
+      "imgSrc": "/images/character/BetelgeuseRendition.png", 
+      "imgAlt": "Betelgeuse Rendition"
+    },
+    { 
+      "imgSrc": "/images/character/Lapidot.png", 
+      "imgAlt": "Lapis & Peridot from Steven Universe"
+    },
+    { 
+      "imgSrc": "/images/character/VildaliaReferencePose.png", 
+      "imgAlt": "Vildalia Reference Pose"
+    },
+    { 
+      "imgSrc": "/images/character/ABeastRemoved.png", 
+      "imgAlt": "A Beast Removed"
+    },
+    { 
+      "imgSrc": "/images/character/BlueyFirstEpFun.png", 
+      "imgAlt": "Bluey First Episode Fun"
+    },
+    { 
+      "imgSrc": "/images/character/DNDElfCharacter.png", 
+      "imgAlt": "DnD Elf Character"
+    },
+    { 
+      "imgSrc": "/images/character/RobbylessBobby.png", 
+      "imgAlt": "Robbyless Bobby"
+    },
+    { 
+      "imgSrc": "/images/character/SerratedFish.png", 
+      "imgAlt": "Serrated Fish Icon"
+    },
+    { 
+      "imgSrc": "/images/character/TheGoldenTreasure.png", 
+      "imgAlt": "The Golden Treasure"
+    },
+    { 
+      "imgSrc": "/images/character/TipsyHogs.png", 
+      "imgAlt": "Tipsy Hogs Holiday Party"
+    },
+    { 
+      "imgSrc": "/images/character/LapidotColorStudy.png", 
+      "imgAlt": "Lapidot Color Study"
+    }
+  ],
+  "comic": [
+    { 
+      "imgSrc": "/images/comics/AutumnSeasoning1-3.png", 
+      "imgAlt": "Autumn Seasoning Pages 1 to 3"
+    },
+    { 
+      "imgSrc": "/images/comics/LaundryScene.png", 
+      "imgAlt": "Laundry Scene"
+    }
+  ],
+  "painting": [
+    { 
+      "imgSrc": "/images/paintings/DistantSummerMemories.png", 
+      "imgAlt": "Distant Summer Memories"
+    },
+    { 
+      "imgSrc": "/images/paintings/RansomsAtSunset.png", 
+      "imgAlt": "Ocean Cat Panel - Ransoms At Sunset"
+    },
+    { 
+      "imgSrc": "/images/paintings/gazooks.png", 
+      "imgAlt": "Gazooks"
+    },
+    { 
+      "imgSrc": "/images/paintings/GwogglesBedtimeBoodle.png", 
+      "imgAlt": "Gwoggles Bedtime Boodle"
+    }
+  ],
+  "afterDark": [
+    {
+      "imgSrc": "/images/weird/CatWickCutieCup.png",
+      "imgAlt": "Cat Wick & Cutie Cup"
+     },
+     {
+       "imgSrc": "/images/weird/CatwickOurLord.png",
+       "imgAlt": "Cat Wick, Our Lord and Savior"
+     },
+     {
+       "imgSrc": "/images/weird/ClaustrophobicRedraw.png",
+       "imgAlt": "Claustrophobic Redraw"
+     },
+     {
+       "imgSrc": "/images/weird/Clavier.png",
+       "imgAlt": "The Endless Clavier"
+     },
+     {
+       "imgSrc": "/images/weird/CryForTheShow.png",
+       "imgAlt": "Crying for the Show"
+     },
+     {
+       "imgSrc": "/images/weird/GamingGrannyInTheTub.png",
+       "imgAlt": "Gaming Granny in the Tub"
+     },
+     {
+       "imgSrc": "/images/weird/Scary.png",
+       "imgAlt": "Scary"
+     },
+     {
+       "imgSrc": "/images/weird/SpookyCryptidsCreaturesPaintedCover.png",
+       "imgAlt": "Cryptids & Creatures Cover"
+     },
+     {
+      "imgSrc": "/images/weird/HorrorClown.png",
+      "imgAlt": "Horror Clown"
+     },
+     {
+      "imgSrc": "/images/weird/Lemon.png",
+      "imgAlt": "Lemon"
+     },
+     {
+      "imgSrc": "/images/weird/Room.png",
+      "imgAlt": "Room"
+     }
+  ]
+}

@@ -1,7 +1,7 @@
 .Animation {
+  height: fit-content;
   min-height: 100vh;
-  padding: 10px;
-  background-color: darkslateblue;
+  background-color: black;
   color: white;
   text-align: center;
 
@@ -12,31 +12,30 @@
 }
 
 .animation-content {
-  width: 90%;
+  width: 100vw;
   column-count: 2;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
+
+  svg {
+    cursor: pointer;
+    font-size: 10vw;
+  }
 }
 
 .animation-video iframe {
-  width: 50vw;
-  height: 33.88vw;
+  width: 90vw;
+  height: calc(90vw * 0.4145);
 }
 
-.animation-thumbnails {
-  display: flex;
-  flex-direction: column;
-
-  img {
-    width: 20vw;
-    padding: 10px;
-    cursor: pointer;
-    transition: width 0.3s;
-  }
-  img:hover {
-    width: 20.5vw;
-    transition: width 0.3s;
+.animation-description {
+  padding: 10px;
+  margin: 0px 30px;
+  
+  p {
+    text-align: left;
   }
 }
 

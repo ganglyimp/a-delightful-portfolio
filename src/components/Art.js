@@ -82,7 +82,7 @@ function Art() {
           { comicArt && comicArt.map((item) => {
               return(
                 <div className='Art-comic-container'>
-                  <img src={process.env.PUBLIC_URL + item.imgSrc} 
+                  <img src={'https://drive.google.com/uc?export=view&id=' + item.gDriveID} 
                        alt={item.imgAlt} 
                        onClick={() => {activateModal(item.imgSrc, item.imgAlt, true)}} 
                   />

@@ -13,3 +13,10 @@ export const slideVertical = {
     y: window.innerHeight
   }
 };
+
+export const slideHorizontal = {
+  change: (direction) => ({
+    x: direction > 0 ? [0, -window.innerWidth, window.innerWidth, 0] : [0, window.innerWidth, -window.innerWidth, 0],
+    opacity: [null, 0, 0, 1],
+  })
+}
