@@ -58,14 +58,20 @@
   }
 
   .header-buttons {
-    display: block;
 
     button {
-      font-size: 4vh;
+      font-size: 3vh;
       margin: 10px;
     }
     button:hover {
-      font-size: 4.5vh;
+      font-size: 3.5vh;
+    }
+
+    img {
+      height: 10vh;
+    }
+    img:hover {
+      height: 10.5vh;
     }
   }
 }

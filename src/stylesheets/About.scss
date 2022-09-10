@@ -44,8 +44,6 @@
 
 @media (max-width: 600px) {
   .About {
-    color: white;
-
     h1 {
       font-size: 8vh;
       margin: auto;
@@ -59,12 +57,23 @@
     }
   }
 
+  .About-card {
+    float: none;
+
+    img {
+      width: 35vh;
+    }
+  }
+
+  .About-text {
+    float: none;
+  }
+
   .About-socials {
     margin-top: 3vh;
 
-    a {
-      font-size: 5vh;
-      color: white;
+    img {
+      width: 6vh;
     }
   }
 }

@@ -139,10 +139,29 @@
   .Art-character {
     img {
       width: 20vh;
-      padding: 10px;
+      padding: 5px;
+      margin: 5px;
     }
     img:hover {
       width: 20.5vh;
+    }
+  }
+
+  .Art-comic {
+    .Art-comic-container {
+      width: 30vh;
+      height: 30vh;
+    }
+    .Art-comic-container:hover {
+      width: 30.5vh;
+      height: 30.5vh;
+    }
+
+    img {
+      width: 30vh;
+    }
+    img:hover {
+      width: 30.5vh;
     }
   }
 

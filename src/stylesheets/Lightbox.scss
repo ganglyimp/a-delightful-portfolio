@@ -37,13 +37,14 @@
 @media (max-width: 600px) {
   .Lightbox {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
 
-    img {
-      width: 100vw;
-      height: unset;
-    }
+  .Lightbox-other {
+    width: 100vw;
+    height: unset;
   }
 
   .Lightbox-close {

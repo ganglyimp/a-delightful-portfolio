@@ -74,15 +74,15 @@
 @media (max-width: 600px) {
   .navbar-button {
     font-size: 6vh;
-    color: white;
   }
 
   .navbar-content {
-    width: 90vw;
-    padding-top: 6vh;
+    display: flex;
+    flex-direction: column;
 
     b {
-      font-size: 6vh;
+      font-size: 5vh;
+      color: white;
     }
   }
 }
