@@ -3,153 +3,182 @@
     { 
       "imgSrc": "/images/character/DnDThunder.png", 
       "gDriveID": "1brtgnH_Z1a1TwVw0ia3-ePKV-sAy6nZ6",
-      "imgAlt": "DnD Thunder" 
+      "imgAlt": "DnD Thunder",
+      "imgCaption": "A commission of a friend's Dungeons & Dragons character." 
     },
     { 
       "imgSrc": "/images/character/TheDarkPrinceFamoraxAbaddonFurcifer.png", 
       "gDriveID": "182UJV7UIRT4E7IR_M4eTaWGme6vgR0fw",
-      "imgAlt": "The Dark Prince Famorax Addon Furcifer Rendition" 
+      "imgAlt": "The Dark Prince Famorax Addon Furcifer Rendition",
+      "imgCaption": "Character art of an NPC from an old D&D campaign."
     },
     { 
       "imgSrc": "/images/character/Lapidot.png", 
       "gDriveID": "1OjA_LkAz6zr1ISihDlB5IMgZaUZgy6wY",
-      "imgAlt": "Lapis & Peridot from Steven Universe"
+      "imgAlt": "Lapis & Peridot from Steven Universe",
+      "imgCaption": "Playing around with some poses & colors with Steven Universe characters."
     },
     { 
       "imgSrc": "/images/character/VildaliaReferencePose.png", 
       "gDriveID": "1_y2pxtIW7PMRIWSt-OEGQl-lHkVE9GzX",
-      "imgAlt": "Vildalia Reference Pose"
+      "imgAlt": "Veldalia Reference Pose",
+      "imgCaption": "I was trying out a curvier art style with my OC Vedalia."
     },
     { 
       "imgSrc": "/images/character/ABeastRemoved.png", 
       "gDriveID": "1k06-egIUIQx5x-Yec9pHc1_2q7KORWM0",
-      "imgAlt": "A Beast Removed"
+      "imgAlt": "A Beast Removed",
+      "imgCaption": "Art of Little Beast with a muted color palette."
     },
     { 
       "imgSrc": "/images/character/BlueyFirstEpFun.png", 
       "gDriveID": "17e37SkQl9jVu1xlREyejSI72pEF_Mw6E",
-      "imgAlt": "Bluey First Episode Fun"
+      "imgAlt": "Bluey First Episode Fun",
+      "imgCaption": "Fanart of Bluey with bright vibrant colors."
     },
     { 
       "imgSrc": "/images/character/DNDElfCharacter.png", 
       "gDriveID": "1vAWoC_MCOCr2VoHKyZL8iefx_y--yb68",
-      "imgAlt": "DnD Elf Character"
+      "imgAlt": "DnD Elf Character",
+      "imgCaption": "Made as part of an art trade."
     },
     { 
       "imgSrc": "/images/character/RobbylessBobby.png", 
       "gDriveID": "1knHvbA5JAQjwf6IsG5bVbC9w4lueESBQ",
-      "imgAlt": "Robbyless Bobby"
+      "imgAlt": "Robbyless Bobby",
+      "imgCaption": "D&D icon for a satyr character."
     },
     { 
       "imgSrc": "/images/character/SerratedFish.png", 
       "gDriveID": "1u5eZ4TsRIK4vFHoijTKmsX2XEuwYsyiF",
-      "imgAlt": "Serrated Fish Icon"
+      "imgAlt": "Serrated Fish Icon",
+      "imgCaption": "D&D icon for an NPC"
     },
     { 
       "imgSrc": "/images/character/TheGoldenTreasure.png", 
       "gDriveID": "1ksFWMHMm4UOLSZnrlXiGMkBzCslnLxSR",
-      "imgAlt": "The Golden Treasure"
+      "imgAlt": "The Golden Treasure",
+      "imgCaption": "I forgot what this came from. I think it's fanart of something."
     },
     { 
       "imgSrc": "/images/character/TipsyHogs.png", 
       "gDriveID": "1Ey0RWguooWjzi4I4-RthdAJ3PKmHWeCk",
-      "imgAlt": "Tipsy Hogs Holiday Party"
+      "imgAlt": "Tipsy Hogs Holiday Party",
+      "imgCaption": "Lineart of players from an old D&D campaign."
     },
     { 
       "imgSrc": "/images/character/LapidotColorStudy.png", 
       "gDriveID": "1FN-q67Fs21nGuS4gNcp8H_byVGQyE-4e",
-      "imgAlt": "Lapidot Color Study"
+      "imgAlt": "Lapidot Color Study",
+      "imgCaption": "Color study with Lapis and Peridot from Steven Universe."
     }
   ],
   "comic": [
     { 
       "imgSrc": "/images/comics/AutumnSeasoning1-3.png",
       "gDriveID": "1CCeluJqMADvC_EwTHlPXx4ANrZJj3oBp", 
-      "imgAlt": "Autumn Seasoning Pages 1 to 3"
+      "imgAlt": "Autumn Seasoning Pages 1 to 3",
+      "imgCaption": ""
     },
     { 
       "imgSrc": "/images/comics/LaundryScene.png", 
       "gDriveID": "16d3sB5NW-3eqcLFCiTiIcGZr8cg8JTxx",
-      "imgAlt": "Laundry Scene"
+      "imgAlt": "Laundry Scene",
+      "imgCaption": ""
     }
   ],
   "painting": [
     { 
       "imgSrc": "/images/paintings/DistantSummerMemories.png",
       "gDriveID": "",
-      "imgAlt": "Distant Summer Memories"
+      "imgAlt": "Distant Summer Memories",
+      "imgCaption": ""
     },
     { 
       "imgSrc": "/images/paintings/RansomsAtSunset.png", 
       "gDriveID": "",
-      "imgAlt": "Ocean Cat Panel - Ransoms At Sunset"
+      "imgAlt": "Ocean Cat Panel - Ransoms At Sunset",
+      "imgCaption": ""
     },
     { 
       "imgSrc": "/images/paintings/gazooks.png", 
       "gDriveID": "",
-      "imgAlt": "Gazooks"
+      "imgAlt": "Gazooks",
+      "imgCaption": ""
     },
     { 
       "imgSrc": "/images/paintings/GwogglesBedtimeBoodle.png", 
       "gDriveID": "",
-      "imgAlt": "Gwoggles Bedtime Boodle"
+      "imgAlt": "Gwoggles Bedtime Boodle",
+      "imgCaption": ""
     }
   ],
   "afterDark": [
     {
       "imgSrc": "/images/weird/CatWickCutieCup.png",
       "gDriveID": "",
-      "imgAlt": "Cat Wick & Cutie Cup"
+      "imgAlt": "Cat Wick & Cutie Cup",
+      "imgCaption": ""
      },
      {
        "imgSrc": "/images/weird/CatwickOurLord.png",
        "gDriveID": "",
-       "imgAlt": "Cat Wick, Our Lord and Savior"
+       "imgAlt": "Cat Wick, Our Lord and Savior",
+       "imgCaption": ""
      },
      {
        "imgSrc": "/images/weird/ClaustrophobicRedraw.png",
        "gDriveID": "",
-       "imgAlt": "Claustrophobic Redraw"
+       "imgAlt": "Claustrophobic Redraw",
+       "imgCaption": ""
      },
      {
        "imgSrc": "/images/weird/Clavier.png",
        "gDriveID": "",
-       "imgAlt": "The Endless Clavier"
+       "imgAlt": "The Endless Clavier",
+       "imgCaption": ""
      },
      {
        "imgSrc": "/images/weird/CryForTheShow.png",
        "gDriveID": "",
-       "imgAlt": "Crying for the Show"
+       "imgAlt": "Crying for the Show",
+       "imgCaption": ""
      },
      {
        "imgSrc": "/images/weird/GamingGrannyInTheTub.png",
        "gDriveID": "",
-       "imgAlt": "Gaming Granny in the Tub"
+       "imgAlt": "Gaming Granny in the Tub",
+       "imgCaption": ""
      },
      {
        "imgSrc": "/images/weird/Scary.png",
        "gDriveID": "",
-       "imgAlt": "Scary"
+       "imgAlt": "Scary",
+       "imgCaption": ""
      },
      {
        "imgSrc": "/images/weird/SpookyCryptidsCreaturesPaintedCover.png",
        "gDriveID": "",
-       "imgAlt": "Cryptids & Creatures Cover"
+       "imgAlt": "Cryptids & Creatures Cover",
+       "imgCaption": ""
      },
      {
       "imgSrc": "/images/weird/HorrorClown.png",
       "gDriveID": "1SJ0XTEcVmPwb1tZcTYsllwXkVSN8vgfF",
-      "imgAlt": "Horror Clown"
+      "imgAlt": "Horror Clown",
+      "imgCaption": ""
      },
      {
       "imgSrc": "/images/weird/Lemon.png",
       "gDriveID": "1YewSnd2hMMfEV407hb5YJS2dPDgEQ6El",
-      "imgAlt": "Lemon"
+      "imgAlt": "Lemon",
+      "imgCaption": ""
      },
      {
       "imgSrc": "/images/weird/Room.png",
       "gDriveID": "1s1tmeUSp0ohZGJJmgx_ohJB5xAiwcquy",
-      "imgAlt": "Room"
+      "imgAlt": "Room",
+      "imgCaption": ""
      }
   ]
 }
