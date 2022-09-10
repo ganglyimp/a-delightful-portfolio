@@ -43,9 +43,9 @@ function AfterDark() {
   return (
     <motion.article 
       className='AfterDark'
-      initial="initial"
-      animate="in"
-      exit="out"
+      initial='initial'
+      animate='in'
+      exit='out'
       variants={slideVertical}
     >
       <header className='AfterDark-header'>

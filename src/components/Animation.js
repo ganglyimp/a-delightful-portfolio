@@ -18,10 +18,10 @@ function Animation() {
 
   return (
     <motion.article 
-      className="Animation" 
-      initial="initial"
-      animate="in"
-      exit="out"
+      className='Animation' 
+      initial='initial'
+      animate='in'
+      exit='out'
       variants={slideVertical}
     >
       <h1>Animation</h1>
@@ -39,9 +39,9 @@ function Animation() {
 
         <div className='animation-video column'>
           <iframe src={`https://www.youtube.com/embed/${youtubeIDs[videoIndex]}`} 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  title='YouTube video player' 
+                  frameborder='0' 
+                  allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' 
                   allowfullscreen>
           </iframe>
         </div>

@@ -15,9 +15,9 @@ function Landing() {
   return (
     <motion.div 
       className='Landing' 
-      initial="initial"
-      animate="in"
-      exit="out"
+      initial='initial'
+      animate='in'
+      exit='out'
       variants={slideVertical}
     >
       <header className='Landing-header' id='Home'>

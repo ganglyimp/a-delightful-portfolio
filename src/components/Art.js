@@ -48,9 +48,9 @@ function Art() {
   return (
     <motion.article 
       className='Art' 
-      initial="initial"
-      animate="in"
-      exit="out"
+      initial='initial'
+      animate='in'
+      exit='out'
       variants={slideVertical}
     >
       <h1>Art</h1>
