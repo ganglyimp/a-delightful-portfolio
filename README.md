@@ -1,5 +1,5 @@
 # a-delightful-portfolio
-A React portfolio website for digital artist @adelightfulgoof \
+A React portfolio website for digital artist [@adelightfulgoof](https://twitter.com/ADelightfulGoof) \
 Access the current version of the website [here](https://ganglyimp.github.io/a-delightful-portfolio/) (NOTE: some features might be broken on the Github Pages deployment).
 
 ## Running the project locally
