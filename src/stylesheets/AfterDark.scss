@@ -24,11 +24,11 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  background-image: url('../images/afterDarkBG.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-attachment: scroll;
+  background-image: url('../images/NightHeader_grass.png'), url('../images/NightHeader_sky.png');
+  background-size: cover, cover;
+  background-attachment: local, fixed;
+  background-position: bottom, bottom;
+  background-repeat: no-repeat, no-repeat;
   text-align: center;
   z-index: 0;
 

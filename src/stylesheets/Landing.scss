@@ -4,10 +4,11 @@
 }
 
 .Landing-header {
-  background-image: url('../images/dayHeader.png');
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
+  background-image: url('../images/dayHeader_grass.png'), url('../images/dayHeader_clouds.png');
+  background-size: contain, cover;
+  background-attachment: local, fixed;
+  background-position: bottom, bottom;
+  background-repeat: no-repeat, no-repeat;
   background-color: #282c34;
 
   min-height: 80vh;
