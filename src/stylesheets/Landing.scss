@@ -28,15 +28,25 @@
   button {
     margin-right: 10px;
     padding: 10px;
-    background: transparent;
+    background-image: url('../images/cardboardTexture.jpg');
+    background-size: cover;
     border: none;
+    font-size: 5.0vw;
+    font-family: 'Walter Turncoat', sans-serif;
     cursor: pointer;
+    transition: font-size 0.3s;
   }
   button:hover {
-    font-size: 4.5vw;
+    font-size: 5.5vw;
     transition: font-size 0.3s;
   }
 
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  /*
   img {
     height: 15vh;
     transition: height 0.3s;
@@ -45,6 +55,7 @@
     height: 15.5vh;
     transition: height 0.3s;
   }
+  */
 }
 
 @media (max-width: 600px) {
@@ -53,25 +64,33 @@
     z-index: 0;
   }
   
-  .Landing-header h1 {
-    font-size: 8vh;
+  .Landing-header {
+    min-height: 30vh;
+
+    h1 {
+      font-size: 8vh;
+      margin-bottom: 0;
+    }
   }
 
   .header-buttons {
+    margin-bottom: 30px;
 
     button {
-      font-size: 3vh;
+      font-size: 5vh;
       margin: 10px;
     }
     button:hover {
-      font-size: 3.5vh;
+      font-size: 5.5vh;
     }
 
+    /*
     img {
       height: 10vh;
     }
     img:hover {
       height: 10.5vh;
     }
+    */
   }
 }

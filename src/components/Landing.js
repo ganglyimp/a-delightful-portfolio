@@ -3,10 +3,12 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import '../stylesheets/Landing.scss';
 
+/*
 import aboutButton from '../images/buttons/about.png';
 import artButton from '../images/buttons/art.png';
 import animationButton from '../images/buttons/animation.png';
 import MFButton from '../images/buttons/mediaFeed.png';
+*/
 
 import About from './About';
 import { slideVertical } from '../stylesheets/AnimationPresets';
@@ -26,25 +28,29 @@ function Landing() {
         <div className='header-buttons'>
           <button type='button'>
             <Link to='/#About'>
-              <img src={aboutButton} alt='About' />
+              {/*<img src={aboutButton} alt='About' />*/}
+              About
             </Link>
           </button>
 
           <button type='button'>
             <Link to='/Art'>
-              <img src={artButton} alt='Art' />
+              {/*<img src={artButton} alt='Art' />*/}
+              Art
             </Link>
           </button>
 
           <button type='button'>
             <Link to='/Animation'>
-              <img src={animationButton} alt='Animation' />
+              {/*<img src={animationButton} alt='Animation' />*/}
+              Animation
             </Link>
           </button>
 
           <button type='button'>
             <Link to='/After-Dark'>
-              <img src={MFButton} alt='Media Feed' />
+              {/*<img src={MFButton} alt='Media Feed' />*/}
+              After Dark
             </Link>
           </button>
         </div>
