@@ -89,7 +89,7 @@ function Art() {
               return(
                 <div className='Art-comic-container'>
                   <motion.img 
-                    src={'https://drive.google.com/uc?export=view&id=' + item.gDriveID} 
+                    src={process.env.PUBLIC_URL + item.imgSrc} 
                     alt={item.imgAlt} 
                     onClick={() => {activateModal(item.imgSrc, item.imgAlt, true)}}
 

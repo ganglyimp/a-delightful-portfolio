@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className='App'>
-      <Navbar />
+      <Navbar currPath={location} />
 
       <AnimatePresence exitBeforeEnter={true}>
         <Routes location={location} key={location.pathname}>
