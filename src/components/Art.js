@@ -16,6 +16,7 @@ function Art() {
   const [showModal, setShowModal] = useState(false);
   const [modalImg, setModalImg] = useState();
   const [modalImgAlt, setModalImgAlt] = useState('');
+  const [modalImgCap, setModalImgCap] = useState('');
   const [isComicModal, setIsComicModal] = useState(false);
 
   useEffect(() => {
@@ -38,10 +39,11 @@ function Art() {
     })
   }
 
-  const activateModal = (imgSrc, imgAlt, isComic) => {
+  const activateModal = (imgSrc, imgAlt, imgCap, isComic) => {
     setShowModal(true);
     setModalImg(imgSrc);
     setModalImgAlt(imgAlt);
+    setModalImgCap(imgCap);
     setIsComicModal(isComic);
   };
 
@@ -70,7 +72,7 @@ function Art() {
                 <motion.img 
                   src={process.env.PUBLIC_URL + item.imgSrc} 
                   alt={item.imgAlt} 
-                  onClick={() => {activateModal(item.imgSrc, item.imgAlt, false)}} 
+                  onClick={() => {activateModal(item.imgSrc, item.imgAlt, item.imgCaption, false)}} 
                   
                   variants={artLoadIn}
                   initial='initial'
@@ -91,7 +93,7 @@ function Art() {
                   <motion.img 
                     src={process.env.PUBLIC_URL + item.imgSrc} 
                     alt={item.imgAlt} 
-                    onClick={() => {activateModal(item.imgSrc, item.imgAlt, true)}}
+                    onClick={() => {activateModal(item.imgSrc, item.imgAlt, item.imgCaption, true)}}
 
                     variants={artLoadIn}
                     initial='initial'
@@ -113,7 +115,7 @@ function Art() {
                 <motion.img 
                   src={process.env.PUBLIC_URL + item.imgSrc} 
                   alt={item.imgAlt} 
-                  onClick={() => {activateModal(item.imgSrc, item.imgAlt, false)}} 
+                  onClick={() => {activateModal(item.imgSrc, item.imgAlt, item.imgCaption, false)}} 
 
                   variants={artLoadIn}
                   initial='initial'
@@ -130,7 +132,8 @@ function Art() {
         <Lightbox 
           setShowModal={setShowModal} 
           modalImg={modalImg} 
-          modalAlt={modalImgAlt} 
+          modalAlt={modalImgAlt}
+          modalCap={modalImgCap} 
           isComic={isComicModal}
         />
       }

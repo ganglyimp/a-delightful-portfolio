@@ -34,7 +34,7 @@
 
 .navbar-content {
   width: 100vw;
-  height: 19vh;
+  height: 11vw;
   position: fixed;
   right: 0;
   padding: 20px;
@@ -48,7 +48,7 @@
 
   transform: translateY(-100%);
   -webkit-transform: translateY(-100%);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  transition: transform 0.3s ease-in-out, height 0.3s;
 
   a {
     text-decoration: none;
@@ -56,7 +56,8 @@
 
   b {
     font-family: "Walter Turncoat";
-    padding: 15px;
+    margin: 10px;
+    padding: 5px;
     padding-bottom: 2px;
     font-size: 4vw;
     line-height: 1;
@@ -86,9 +87,6 @@
 }
 
 .slide-in {
-  //box-shadow: 0 10px 6px -6px #111;
-  //-webkit-box-shadow: 0 10px 6px -6px #111;
-
   transform: translateY(0);
   -webkit-transform: translateY(0);
 }
@@ -101,10 +99,11 @@
   .navbar-content {
     display: flex;
     flex-direction: column;
-    height: 35vh;
+    height: 45vh;
 
     b {
       font-size: 5vh;
+      line-height: 1.5em;
     }
   }
 }

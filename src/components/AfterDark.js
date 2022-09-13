@@ -13,6 +13,7 @@ function AfterDark() {
   const [showModal, setShowModal] = useState(false);
   const [modalImg, setModalImg] = useState();
   const [modalImgAlt, setModalImgAlt] = useState('');
+  const [modalImgCap, setModalImgCap] = useState('');
   const [isComicModal, setIsComicModal] = useState(false);
 
   useEffect(() => {
@@ -33,10 +34,11 @@ function AfterDark() {
     })
   };
 
-  const activateModal = (imgSrc, imgAlt, isComic) => {
+  const activateModal = (imgSrc, imgAlt, imgCap, isComic) => {
     setShowModal(true);
     setModalImg(imgSrc);
     setModalImgAlt(imgAlt);
+    setModalImgCap(imgCap);
     setIsComicModal(isComic);
   };
 
@@ -62,7 +64,7 @@ function AfterDark() {
               <motion.img 
                 src={process.env.PUBLIC_URL + item.imgSrc} 
                 alt={item.imgAlt} 
-                onClick={() => {activateModal(item.imgSrc, item.imgAlt, false)}}
+                onClick={() => {activateModal(item.imgSrc, item.imgAlt, item.imgCaption, false)}}
 
                 variants={artLoadIn}
                 initial='initial'
@@ -78,7 +80,8 @@ function AfterDark() {
         <Lightbox 
           setShowModal={setShowModal} 
           modalImg={modalImg} 
-          modalAlt={modalImgAlt} 
+          modalAlt={modalImgAlt}
+          modalCap={modalImgCap}
           isComic={isComicModal}
         />
       }

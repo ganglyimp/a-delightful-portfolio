@@ -16,7 +16,7 @@ function Lightbox(props) {
       { !props.isComic &&
         <div className='Lightbox-caption'>
           <b>{props.modalAlt}</b>
-          <p>This is a caption for the image. I think the image is very nice.</p>
+          <p>{props.modalCap}</p>
         </div>
       }
     </div>
