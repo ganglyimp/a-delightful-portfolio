@@ -55,14 +55,15 @@
   }
 
   b {
-    font-family: "Walter Turncoat";
     margin: 10px;
     padding: 5px;
     padding-bottom: 2px;
+    background: linear-gradient(0deg, black, black) no-repeat right bottom / 0 var(--bg-h);
+    border-radius: 15px;
+    font-family: "Walter Turncoat";
     font-size: 4vw;
     line-height: 1;
     color: black;
-    background: linear-gradient(0deg, black, black) no-repeat right bottom / 0 var(--bg-h);
     transition: background-size 350ms;
     --bg-h: 5px;
   }

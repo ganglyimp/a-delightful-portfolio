@@ -1,4 +1,5 @@
 import { React} from 'react';
+import PropTypes from 'prop-types';
 import '../stylesheets/Lightbox.scss';
 
 import { XLg } from 'react-bootstrap-icons';
@@ -22,5 +23,12 @@ function Lightbox(props) {
     </div>
   );
 }
+
+Lightbox.propTypes = {
+  isComic: PropTypes.bool,
+  modalImg: PropTypes.string,
+  modalAlt: PropTypes.string,
+  modalCap: PropTypes.string
+};
 
 export default Lightbox;

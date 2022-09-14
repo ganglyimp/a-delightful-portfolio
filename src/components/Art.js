@@ -3,7 +3,8 @@ import { motion } from 'framer-motion';
 import '../stylesheets/Art.scss';
 
 import Lightbox from './Lightbox';
-import { slideVertical, artLoadIn } from '../stylesheets/AnimationPresets';
+import ArtSection from './ArtSection';
+import { slideVertical } from '../stylesheets/AnimationPresets';
 
 function Art() {
   
@@ -12,9 +13,10 @@ function Art() {
   const [paintingArt, setPaintingArt] = useState([]);                    
 
   const [activeTab, setActiveTab] = useState(0);
+  const [tabDirection, setTabDirection] = useState(1);
 
   const [showModal, setShowModal] = useState(false);
-  const [modalImg, setModalImg] = useState();
+  const [modalImg, setModalImg] = useState('');
   const [modalImgAlt, setModalImgAlt] = useState('');
   const [modalImgCap, setModalImgCap] = useState('');
   const [isComicModal, setIsComicModal] = useState(false);
@@ -39,6 +41,17 @@ function Art() {
     })
   }
 
+  const switchTab = (newTab) => {
+    let tabDirection = activeTab - newTab;
+
+    if (tabDirection > 0)
+      setTabDirection(1);
+    else
+      setTabDirection(-1);
+    
+    setActiveTab(newTab);
+  };
+
   const activateModal = (imgSrc, imgAlt, imgCap, isComic) => {
     setShowModal(true);
     setModalImg(imgSrc);
@@ -58,74 +71,60 @@ function Art() {
       <h1>Art</h1>
 
       <div className='Art-tabs'>
-        <button className={activeTab === 0 ? 'active' : ''} type='button' onClick={() => {setActiveTab(0)}}>Character Art</button>
+        <button 
+          className={activeTab === 0 ? 'active' : ''} 
+          type='button' 
+          onClick={() => {switchTab(0)}}
+        >
+          Character Art
+        </button>
+
         <b>•</b>
-        <button className={activeTab === 1 ? 'active' : ''} type='button' onClick={() => {setActiveTab(1)}}>Comics</button>
+
+        <button 
+          className={activeTab === 1 ? 'active' : ''} 
+          type='button' 
+          onClick={() => {switchTab(1)}}
+        >
+          Comics
+        </button>
+
         <b>•</b>
-        <button className={activeTab === 2 ? 'active' : ''} type='button' onClick={() => {setActiveTab(2)}}>Paintings</button>
+
+        <button 
+          className={activeTab === 2 ? 'active' : ''} 
+          type='button' 
+          onClick={() => {switchTab(2)}}
+        >
+          Paintings
+        </button>
       </div>
 
       { activeTab === 0 &&
-        <section className='Art-character'>
-          { characterArt && characterArt.map((item) => {
-              return(
-                <motion.img 
-                  src={process.env.PUBLIC_URL + item.imgSrc} 
-                  alt={item.imgAlt} 
-                  onClick={() => {activateModal(item.imgSrc, item.imgAlt, item.imgCaption, false)}} 
-                  
-                  variants={artLoadIn}
-                  initial='initial'
-                  animate='in'
-                  exit='out'
-                />
-              )
-            })
-          }
-        </section>
+        <ArtSection
+          artType='character'
+          direction={tabDirection}
+          artData={characterArt}
+          activateModal={activateModal}
+        />
       }
 
       { activeTab === 1 &&
-        <section className='Art-comic'>
-          { comicArt && comicArt.map((item) => {
-              return(
-                <div className='Art-comic-container'>
-                  <motion.img 
-                    src={process.env.PUBLIC_URL + item.imgSrc} 
-                    alt={item.imgAlt} 
-                    onClick={() => {activateModal(item.imgSrc, item.imgAlt, item.imgCaption, true)}}
-
-                    variants={artLoadIn}
-                    initial='initial'
-                    animate='in'
-                    exit='out'
-                  />
-                  <b>{item.imgAlt}</b>
-                </div>
-              )
-            })
-          }
-        </section>
+        <ArtSection
+          artType='comic'
+          direction={tabDirection}
+          artData={comicArt}
+          activateModal={activateModal}
+        />
       }
 
       { activeTab === 2 &&
-        <section className='Art-painting'>
-          { paintingArt && paintingArt.map((item) => {
-              return(
-                <motion.img 
-                  src={process.env.PUBLIC_URL + item.imgSrc} 
-                  alt={item.imgAlt} 
-                  onClick={() => {activateModal(item.imgSrc, item.imgAlt, item.imgCaption, false)}} 
-
-                  variants={artLoadIn}
-                  initial='initial'
-                  animate='in'
-                  exit='out'
-                />
-              )
-            })
-          }
-        </section>
+        <ArtSection 
+          artType='painting'
+          direction={tabDirection}
+          artData={paintingArt}
+          activateModal={activateModal}
+        />
       }
 
       { showModal && 

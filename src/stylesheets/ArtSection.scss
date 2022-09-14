@@ -1,0 +1,111 @@
+.Art-character {
+  text-align: left;
+
+  img {
+    width: 20vw;
+    margin: 20px;
+  }
+  img:hover {
+    width: 20.5vw;
+    transition: width 0.3s;
+  }
+}
+
+.Art-comic {
+  display: flex;
+  justify-content: center;
+
+  .Art-comic-container {
+    width: 20vw;
+    height: 20vw;
+    margin: 10px;
+    position: relative;
+    float: left;
+    border: solid white 4px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+    transition: width 0.3s, height 0.3s;
+
+    b {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: transparent;
+      transition: color 0.3s;
+    }
+  }
+  .Art-comic-container:hover {
+    width: 20.5vw;
+    height: 20.5vw;
+    transition: width 0.3s, height 0.3s;
+
+    b {
+      color: white;
+      transition: color 0.3s;
+    }
+  }
+
+  img {
+    width: 20vw;
+    opacity: 1;
+    transition: width 0.3s, opacity 0.3s;
+  }
+  img:hover {
+    width: 20.5vw;
+    opacity: 0.7;
+    transition: width 0.3s, opacity 0.3s;
+  }
+}
+
+.Art-painting {
+  img {
+    width: 25vw;
+    padding: 20px;
+  }
+  img:hover {
+    width: 25.5vw;
+    transition: width 0.3s;
+  }
+}
+
+@media (max-width: 600px) {
+  .Art-character {
+    img {
+      width: 20vh;
+      padding: 5px;
+      margin: 5px;
+    }
+    img:hover {
+      width: 20.5vh;
+    }
+  }
+
+  .Art-comic {
+    .Art-comic-container {
+      width: 30vh;
+      height: 30vh;
+    }
+    .Art-comic-container:hover {
+      width: 30.5vh;
+      height: 30.5vh;
+    }
+
+    img {
+      width: 30vh;
+    }
+    img:hover {
+      width: 30.5vh;
+    }
+  }
+
+  .Art-painting {
+    img {
+      width: 30vh;
+    }
+    img:hover {
+      width: 30.5vh;
+    }
+  }
+}

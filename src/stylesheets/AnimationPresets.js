@@ -32,3 +32,18 @@ export const artLoadIn = {
     opacity: 0
   }
 };
+
+export const sectionSlide = {
+  initial: (direction) => ({
+    x: direction > 0 ? -window.innerWidth : window.innerWidth,
+    opacity: 0
+  }),
+  in: {
+    x: 0,
+    opacity: 1
+  },
+  out: (direction) => ({
+    x: direction > 0 ? window.innerWidth : -window.innerWidth,
+    opacity: 0
+  })
+}
