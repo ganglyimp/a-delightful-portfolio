@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/a-delightful-portfolio/static/css/main.c6f1e95f.css",
-    "main.js": "/a-delightful-portfolio/static/js/main.f2290eb5.js",
+    "main.css": "/a-delightful-portfolio/static/css/main.67e64f6b.css",
+    "main.js": "/a-delightful-portfolio/static/js/main.787c635d.js",
     "static/js/787.b92d0419.chunk.js": "/a-delightful-portfolio/static/js/787.b92d0419.chunk.js",
     "static/media/RippedCardboard.png": "/a-delightful-portfolio/static/media/RippedCardboard.62aec5e8b12496336550.png",
     "static/media/NightHeader_sky.png": "/a-delightful-portfolio/static/media/NightHeader_sky.3ba3f2d29a661ec3eca2.png",
@@ -15,12 +15,12 @@
     "static/media/twitter.png": "/a-delightful-portfolio/static/media/twitter.2a1ba35a53039f4aac43.png",
     "static/media/youtube.png": "/a-delightful-portfolio/static/media/youtube.ccaccd7e64b69dd1d645.png",
     "index.html": "/a-delightful-portfolio/index.html",
-    "main.c6f1e95f.css.map": "/a-delightful-portfolio/static/css/main.c6f1e95f.css.map",
-    "main.f2290eb5.js.map": "/a-delightful-portfolio/static/js/main.f2290eb5.js.map",
+    "main.67e64f6b.css.map": "/a-delightful-portfolio/static/css/main.67e64f6b.css.map",
+    "main.787c635d.js.map": "/a-delightful-portfolio/static/js/main.787c635d.js.map",
     "787.b92d0419.chunk.js.map": "/a-delightful-portfolio/static/js/787.b92d0419.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6f1e95f.css",
-    "static/js/main.f2290eb5.js"
+    "static/css/main.67e64f6b.css",
+    "static/js/main.787c635d.js"
   ]
 }
