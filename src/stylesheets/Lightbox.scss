@@ -28,6 +28,14 @@
   font-size: 5vw;
   cursor: pointer;
   z-index: 5;
+  filter: drop-shadow(1px 1px 0 black) 
+              drop-shadow(-1px 1px 0 black)
+              drop-shadow(1px -1px 0 black) 
+              drop-shadow(-1px -1px 0 black);
+  -webkit-filter: drop-shadow(1px 1px 0 black) 
+                  drop-shadow(-1px 1px 0 black)
+                  drop-shadow(1px -1px 0 black) 
+                  drop-shadow(-1px -1px 0 black);
 }
 
 .Lightbox-caption {
