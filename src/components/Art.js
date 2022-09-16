@@ -135,15 +135,18 @@ function Art() {
         }
       </AnimatePresence>
 
-      { showModal && 
-        <Lightbox 
-          setShowModal={setShowModal} 
-          modalImg={modalImg} 
-          modalAlt={modalImgAlt}
-          modalCap={modalImgCap} 
-          isComic={isComicModal}
-        />
-      }
+      <AnimatePresence>
+        { showModal && 
+          <Lightbox 
+            key={'lightboxModal'}
+            setShowModal={setShowModal} 
+            modalImg={modalImg} 
+            modalAlt={modalImgAlt}
+            modalCap={modalImgCap} 
+            isComic={isComicModal}
+          />
+        }
+      </AnimatePresence>
 
     </motion.article>
   );
