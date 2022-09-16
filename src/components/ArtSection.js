@@ -18,10 +18,10 @@ function ArtSection(props) {
       exit='out'
       transition={{x: {type: 'spring', stiffness: 300, damping: 30, duration: 0.2}, opacity: {duration: 0.2}}}
     >
-      { props.artData && props.artData.map((item) => {
+      { props.artData && props.artData.map((item, index) => {
           if (props.artType === 'comic') {
             return(
-              <div className='Art-comic-container'>
+              <div className='Art-comic-container' key={`artItem-${index}`}>
                 <img 
                   src={process.env.PUBLIC_URL + item.imgSrc} 
                   alt={item.imgAlt} 
@@ -34,6 +34,7 @@ function ArtSection(props) {
           else {
             return(
               <img 
+                key={`artItem-${index}`}
                 src={process.env.PUBLIC_URL + item.imgSrc} 
                 alt={item.imgAlt} 
                 onClick={() => {props.activateModal(item.imgSrc, item.imgAlt, item.imgCaption, isComic)}} 
@@ -49,7 +50,7 @@ function ArtSection(props) {
 ArtSection.propTypes = {
   artType: PropTypes.string,
   direction: PropTypes.number,
-  artData: PropTypes.object,
+  artData: PropTypes.array,
   activateModal: PropTypes.func
 };
 

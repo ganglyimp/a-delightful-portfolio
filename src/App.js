@@ -32,7 +32,7 @@ function App() {
     <div className='App'>
       <Navbar currPath={location} />
 
-      <AnimatePresence exitBeforeEnter={true}>
+      <AnimatePresence mode='wait'>
         <Routes location={location} key={location.pathname}>
           <Route path='/' element={<Landing />} />
           <Route path='/Art' element={<Art />} />

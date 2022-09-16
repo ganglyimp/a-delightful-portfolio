@@ -12,7 +12,7 @@ function Art() {
   const [comicArt, setComicArt] = useState([]);
   const [paintingArt, setPaintingArt] = useState([]);                    
 
-  const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useState(1);
   const [tabDirection, setTabDirection] = useState(1);
 
   const [showModal, setShowModal] = useState(false);
@@ -42,8 +42,16 @@ function Art() {
   }
 
   const switchTab = (newTab) => {
-    let tabDirection = activeTab - newTab;
-    setTabDirection(tabDirection / Math.abs(tabDirection)); //-1: RtL, 1: LtR
+    let direction = activeTab - newTab;
+    if (direction === 0) { return; }
+
+    if (direction < 0) {
+      setTabDirection(-1); //Right-to-Left
+    }
+    else {
+      setTabDirection(1); //Left-to-Right
+    }
+
     setActiveTab(newTab);
   };
 
@@ -67,21 +75,11 @@ function Art() {
 
       <div className='Art-tabs'>
         <button 
-          className={activeTab === 0 ? 'active' : ''} 
-          type='button' 
-          onClick={() => {switchTab(0)}}
-        >
-          Character Art
-        </button>
-
-        <b>•</b>
-
-        <button 
           className={activeTab === 1 ? 'active' : ''} 
           type='button' 
           onClick={() => {switchTab(1)}}
         >
-          Comics
+          Character Art
         </button>
 
         <b>•</b>
@@ -91,12 +89,22 @@ function Art() {
           type='button' 
           onClick={() => {switchTab(2)}}
         >
+          Comics
+        </button>
+
+        <b>•</b>
+
+        <button 
+          className={activeTab === 3 ? 'active' : ''} 
+          type='button' 
+          onClick={() => {switchTab(3)}}
+        >
           Paintings
         </button>
       </div>
 
-      <AnimatePresence exitBeforeEnter initial={false}>
-        { activeTab === 0 &&
+      <AnimatePresence mode='wait' initial={false}>
+        { activeTab === 1 &&
           <ArtSection
             key={'characterTab'}
             artType='character'
@@ -106,7 +114,7 @@ function Art() {
           />
         }
 
-        { activeTab === 1 &&
+        { activeTab === 2 &&
           <ArtSection
             key={'comicTab'}
             artType='comic'
@@ -116,7 +124,7 @@ function Art() {
           />
         }
 
-        { activeTab === 2 &&
+        { activeTab === 3 &&
           <ArtSection 
             key={'paintingTab'}
             artType='painting'

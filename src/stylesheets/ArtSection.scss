@@ -20,7 +20,6 @@
     height: 30vw;
     margin: 10px;
     position: relative;
-    float: left;
     border: solid white 4px;
     border-radius: 5px;
     overflow: hidden;
@@ -36,6 +35,7 @@
       transition: color 0.3s;
     }
   }
+  
   .Art-comic-container:hover {
     width: 30.5vw;
     height: 30.5vw;
