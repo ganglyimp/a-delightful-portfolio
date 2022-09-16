@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import '../stylesheets/Art.scss';
 
 import Lightbox from './Lightbox';
@@ -43,12 +43,7 @@ function Art() {
 
   const switchTab = (newTab) => {
     let tabDirection = activeTab - newTab;
-
-    if (tabDirection > 0)
-      setTabDirection(1);
-    else
-      setTabDirection(-1);
-    
+    setTabDirection(tabDirection / Math.abs(tabDirection)); //-1: RtL, 1: LtR
     setActiveTab(newTab);
   };
 
@@ -100,32 +95,37 @@ function Art() {
         </button>
       </div>
 
-      { activeTab === 0 &&
-        <ArtSection
-          artType='character'
-          direction={tabDirection}
-          artData={characterArt}
-          activateModal={activateModal}
-        />
-      }
+      <AnimatePresence exitBeforeEnter initial={false}>
+        { activeTab === 0 &&
+          <ArtSection
+            key={'characterTab'}
+            artType='character'
+            direction={tabDirection}
+            artData={characterArt}
+            activateModal={activateModal}
+          />
+        }
 
-      { activeTab === 1 &&
-        <ArtSection
-          artType='comic'
-          direction={tabDirection}
-          artData={comicArt}
-          activateModal={activateModal}
-        />
-      }
+        { activeTab === 1 &&
+          <ArtSection
+            key={'comicTab'}
+            artType='comic'
+            direction={tabDirection}
+            artData={comicArt}
+            activateModal={activateModal}
+          />
+        }
 
-      { activeTab === 2 &&
-        <ArtSection 
-          artType='painting'
-          direction={tabDirection}
-          artData={paintingArt}
-          activateModal={activateModal}
-        />
-      }
+        { activeTab === 2 &&
+          <ArtSection 
+            key={'paintingTab'}
+            artType='painting'
+            direction={tabDirection}
+            artData={paintingArt}
+            activateModal={activateModal}
+          />
+        }
+      </AnimatePresence>
 
       { showModal && 
         <Lightbox 

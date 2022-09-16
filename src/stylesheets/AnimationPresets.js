@@ -21,29 +21,22 @@ export const fakeCarousel = {
   })
 };
 
-export const artLoadIn = {
-  initial: {
-    opacity: 0
-  },
-  in: {
-    opacity: 1
-  },
-  out: {
-    opacity: 0
-  }
-};
-
 export const sectionSlide = {
-  initial: (direction) => ({
-    x: direction > 0 ? -window.innerWidth : window.innerWidth,
-    opacity: 0
-  }),
+  initial: (direction) => {
+    return {
+      x: direction > 0 ? -window.innerWidth : window.innerWidth,
+      opacity: 0
+    };
+  },
   in: {
+    zIndex: 1,
     x: 0,
     opacity: 1
   },
-  out: (direction) => ({
-    x: direction > 0 ? window.innerWidth : -window.innerWidth,
-    opacity: 0
-  })
+  out: (direction) => {
+    return {
+      x: direction > 0 ? window.innerWidth : -window.innerWidth,
+      opacity: 0
+    };
+  }
 }

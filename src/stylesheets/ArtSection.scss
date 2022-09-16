@@ -16,8 +16,8 @@
   justify-content: center;
 
   .Art-comic-container {
-    width: 20vw;
-    height: 20vw;
+    width: 30vw;
+    height: 30vw;
     margin: 10px;
     position: relative;
     float: left;
@@ -37,8 +37,8 @@
     }
   }
   .Art-comic-container:hover {
-    width: 20.5vw;
-    height: 20.5vw;
+    width: 30.5vw;
+    height: 30.5vw;
     transition: width 0.3s, height 0.3s;
 
     b {
@@ -48,12 +48,12 @@
   }
 
   img {
-    width: 20vw;
+    width: 30vw;
     opacity: 1;
     transition: width 0.3s, opacity 0.3s;
   }
   img:hover {
-    width: 20.5vw;
+    width: 30.5vw;
     opacity: 0.7;
     transition: width 0.3s, opacity 0.3s;
   }

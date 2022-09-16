@@ -4,7 +4,7 @@ import '../stylesheets/AfterDark.scss';
 import '../stylesheets/Fireflies.scss';
 
 import Lightbox from './Lightbox';
-import { slideVertical, artLoadIn } from '../stylesheets/AnimationPresets';
+import { slideVertical } from '../stylesheets/AnimationPresets';
 
 function AfterDark() {
   const fireflyNum = 20; //# of animated fireflies
@@ -61,15 +61,10 @@ function AfterDark() {
       <div className='AfterDark-images'>
         { imgData && imgData.map((item) => {
             return(
-              <motion.img 
+              <img 
                 src={process.env.PUBLIC_URL + item.imgSrc} 
                 alt={item.imgAlt} 
                 onClick={() => {activateModal(item.imgSrc, item.imgAlt, item.imgCaption, false)}}
-
-                variants={artLoadIn}
-                initial='initial'
-                animate='in'
-                exit='out'
               />
             )
           })
