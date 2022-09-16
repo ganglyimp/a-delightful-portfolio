@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import '../stylesheets/AfterDark.scss';
 import '../stylesheets/Fireflies.scss';
 
@@ -70,16 +70,18 @@ function AfterDark() {
           })
         }
       </div>
-
-      { showModal && 
-        <Lightbox 
-          setShowModal={setShowModal} 
-          modalImg={modalImg} 
-          modalAlt={modalImgAlt}
-          modalCap={modalImgCap}
-          isComic={isComicModal}
-        />
-      }
+      
+      <AnimatePresence>
+        { showModal && 
+          <Lightbox 
+            setShowModal={setShowModal} 
+            modalImg={modalImg} 
+            modalAlt={modalImgAlt}
+            modalCap={modalImgCap}
+            isComic={isComicModal}
+          />
+        }
+      </AnimatePresence>
     </motion.article>
   );
 }
