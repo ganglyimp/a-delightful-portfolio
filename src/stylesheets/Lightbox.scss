@@ -35,16 +35,14 @@
 }
 
 @media (max-width: 600px) {
-  .Lightbox {
+  .Lightbox-other {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  .Lightbox-other {
     width: 100vw;
     height: unset;
+    padding: 0;
   }
 
   .Lightbox-close {

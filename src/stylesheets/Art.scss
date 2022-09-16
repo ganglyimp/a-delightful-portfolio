@@ -77,10 +77,14 @@
   }
 
   .Art-tabs {
-    margin-top: 3vh;
-
+    .active {
+      font-size: 3.5vh;
+    }
     button {
-      font-size: 2.5vh;
+      font-size: 3vh;
+    }
+    button:hover {
+      font-size: 3.5vh;
     }
   }
 }
