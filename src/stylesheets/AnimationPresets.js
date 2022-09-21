@@ -14,13 +14,6 @@ export const slideVertical = {
   }
 };
 
-export const fakeCarousel = {
-  change: (direction) => ({
-    x: direction > 0 ? [0, -window.innerWidth, window.innerWidth, 0] : [0, window.innerWidth, -window.innerWidth, 0],
-    opacity: [null, 0, 0, 1],
-  })
-};
-
 export const sectionSlide = {
   initial: (direction) => {
     return {
@@ -39,4 +32,16 @@ export const sectionSlide = {
       opacity: 0
     };
   }
-}
+};
+
+export const videoExpand = {
+  initial: {
+
+  },
+  in: {
+
+  },
+  out: {
+    
+  }
+};

@@ -2,7 +2,8 @@
   height: fit-content;
   min-height: 100vh;
   background-color: #001;
-  color: white;
+  background-image: url(../images/warmCardboard.jpg);
+  background-size: contain;
   text-align: center;
 
   h1 {
@@ -11,36 +12,82 @@
   }
 }
 
-.animation-content {
-  width: 100vw;
-  column-count: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #222;
+.animation-card-group {
+  padding-bottom: 2em;
+}
 
-  svg {
+.animation-card {
+  img {
     cursor: pointer;
-    font-size: 10vw;
+    border-radius: 10px;
+    width: 50%;
+    transition: width 0.3s;
+  }
+  img:hover {
+    width: 51%;
+    transition: width 0.3s;
+  }
+
+  h2 {
+    margin-bottom: 0;
+    font-size: 2.5em;
   }
 }
 
-.animation-video iframe {
-  width: 90vw;
-  height: calc(90vw * 0.4145);
+.animation-content {
+  svg {
+    position: absolute;
+    top: 3%;
+    left: 0;
+    color: white;
+    font-size: 5vw;
+    cursor: pointer;
+  }
+
+  iframe {
+    width: 90vw;
+    height: calc(90vw * 0.4145);
+  }
 }
 
 .animation-description {
-  padding: 10px;
-  margin: 0px 30px;
+  width: 90vw;
+  margin: auto;
+  background-color: black;
+  color: white;
+
+  h2 {
+    margin: 0;
+    font-size: 2.5em;
+  }
   
   p {
     text-align: left;
+    padding: 0 10px;
   }
 }
 
 @media (max-width: 600px) {
   .Animation h1 {
     font-size: 15vw;
+  }
+
+  .animation-card {
+    img {
+      width: 70%;
+    }
+    img:hover {
+      width: 71%;
+    }
+
+    h2 {
+      font-size: 1.7em;
+    }
+  }
+
+  .animation-content {
+    svg {
+      font-size: 2em;
+    }
   }
 }
