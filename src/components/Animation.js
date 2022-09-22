@@ -28,6 +28,16 @@ function Animation() {
     >
       <h1>Animation</h1>
 
+      {/* BACK BUTTON - APPEARS WHEN VIDEO MODAL ACTIVE */}
+      <button 
+        className={`animation-back ${(modalOpen) ? 'back-active' : 'back-inactive'}`} 
+        type='button' 
+        onClick={() => {setModalOpen(false)}}
+      >
+        <ChevronLeft onClick={() => {setModalOpen(false)}} />
+      </button>
+
+      {/* VIDEO THUMBNAIL CARDS */}
       { !modalOpen &&
         <motion.section className='animation-card-group'>
           { youtubeIDs && youtubeIDs.map((item, index) => {
@@ -42,10 +52,9 @@ function Animation() {
         </motion.section>
       }
       
+      {/* VIDEO MODAL - YT VIDEO & DESCRIPTION */}
       { modalOpen &&
         <motion.section className='animation-content'>
-          <ChevronLeft onClick={() => {setModalOpen(false)}} />
-
           <iframe src={`https://www.youtube.com/embed/${youtubeIDs[videoIndex]}`} 
                     title='YouTube video player' 
                     frameborder='0' 
