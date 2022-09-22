@@ -2,6 +2,14 @@
   img {
     width: 20vw;
     margin: 20px;
+    filter: drop-shadow(2px 2px 0 white) 
+              drop-shadow(-2px 2px 0 white)
+              drop-shadow(2px -2px 0 white) 
+              drop-shadow(-2px -2px 0 white);
+      -webkit-filter: drop-shadow(2px 2px 0 white) 
+                      drop-shadow(-2px 2px 0 white)
+                      drop-shadow(2px -2px 0 white) 
+                      drop-shadow(-2px -2px 0 white);
   }
   img:hover {
     width: 20.5vw;
@@ -61,7 +69,9 @@
 .Art-painting {
   img {
     width: 25vw;
-    padding: 20px;
+    margin: 20px;
+    border: white solid 4px;
+    border-radius: 5px;
   }
   img:hover {
     width: 25.5vw;

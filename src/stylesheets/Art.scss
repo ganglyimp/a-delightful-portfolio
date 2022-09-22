@@ -16,14 +16,6 @@
     margin-top: 20px;
 
     img {
-      filter: drop-shadow(2px 2px 0 white) 
-              drop-shadow(-2px 2px 0 white)
-              drop-shadow(2px -2px 0 white) 
-              drop-shadow(-2px -2px 0 white);
-      -webkit-filter: drop-shadow(2px 2px 0 white) 
-                      drop-shadow(-2px 2px 0 white)
-                      drop-shadow(2px -2px 0 white) 
-                      drop-shadow(-2px -2px 0 white);
       cursor: pointer;
       transition: width 0.3s;
     }
