@@ -1,9 +1,9 @@
 .Animation {
-  height: fit-content;
   min-height: 100vh;
-  background-color: #001;
+  padding: 10px;
+  background-color: #aa8258;
   background-image: url(../images/warmCardboard.jpg);
-  background-size: contain;
+  background-size: 100% auto;
   text-align: center;
 
   h1 {
@@ -52,18 +52,43 @@
 
 .animation-description {
   width: 90vw;
+  height: fit-content;
   margin: auto;
-  background-color: black;
-  color: white;
+  position: relative;
+  background-color: #e4e1e1;
+  box-shadow: rgba(0, 0, 0, 0.15) -3.4px 3.4px 3.2px, rgba(0, 0, 0, 0.15) 3.4px -3.4px 3.2px;
+  color: black;
 
   h2 {
-    margin: 0;
     font-size: 2.5em;
   }
   
   p {
     text-align: left;
-    padding: 0 10px;
+    padding: 10px;
+  }
+
+  &::before, &::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 30px;
+    position: absolute;
+    background:linear-gradient(to right,rgba(254, 254, 254, .3),rgba(254, 254, 254, .7),rgba(254, 254, 254, .3));
+    border-left: 1px dashed rgba(254, 254, 254, 0.6);
+    border-right: 1px dashed rgba(254, 254, 254, 0.6);
+    border-top-left-radius: 100px 2px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);;
+    transform: rotateZ(145deg);
+  }
+  &::before {
+    top: 0;
+    left: -20px;
+  }
+  &::after {
+    bottom: 0;
+    right: -20px;
   }
 }
 

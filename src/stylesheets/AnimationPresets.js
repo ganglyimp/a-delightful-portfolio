@@ -42,6 +42,9 @@ export const videoExpand = {
 
   },
   out: {
-    
+
   }
 };
+
+//https://blog.maximeheckel.com/posts/guide-animations-spark-joy-framer-motion/
+//https://blog.maximeheckel.com/posts/advanced-animation-patterns-with-framer-motion/

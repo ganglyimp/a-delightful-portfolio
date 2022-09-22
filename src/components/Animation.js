@@ -14,6 +14,8 @@ function Animation() {
   const thumbnailClick = (index) => {
     setModalOpen(true);
     setVideoIndex(index);
+
+    window.scrollTo(0, 0);
   };
 
   return (

@@ -1,6 +1,4 @@
 .Art-character {
-  text-align: left;
-
   img {
     width: 20vw;
     margin: 20px;
@@ -32,6 +30,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       color: transparent;
+      pointer-events: none;
       transition: color 0.3s;
     }
   }
