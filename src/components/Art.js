@@ -73,6 +73,7 @@ function Art() {
     >
       <h1>Art</h1>
 
+      {/* TAB BUTTONS */}
       <div className='Art-tabs'>
         <button 
           className={activeTab === 1 ? 'active' : ''} 
@@ -103,6 +104,7 @@ function Art() {
         </button>
       </div>
 
+      {/* ART SECTIONS */}
       <AnimatePresence mode='wait' initial={false}>
         { activeTab === 1 &&
           <ArtSection
@@ -135,6 +137,7 @@ function Art() {
         }
       </AnimatePresence>
 
+      {/* LIGHTBOX MODAL */}
       <AnimatePresence>
         { showModal && 
           <Lightbox 

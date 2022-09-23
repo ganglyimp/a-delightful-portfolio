@@ -12,14 +12,13 @@ function Animation() {
   const [videoIndex, setVideoIndex] = useState(0);
 
   const thumbnailClick = (index) => {
+    window.scrollTo(0, 0);
     setModalOpen(true);
     setVideoIndex(index);
-
-    window.scrollTo(0, 0);
   };
 
   return (
-    <motion.article 
+    <motion.article
       className='Animation' 
       initial='initial'
       animate='in'
@@ -54,12 +53,12 @@ function Animation() {
       
       {/* VIDEO MODAL - YT VIDEO & DESCRIPTION */}
       { modalOpen &&
-        <motion.section className='animation-content'>
+        <motion.section className='animation-content' id='animationModal'>
           <iframe src={`https://www.youtube.com/embed/${youtubeIDs[videoIndex]}`} 
-                    title='YouTube video player' 
-                    frameborder='0' 
-                    allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' 
-                    allowfullscreen>
+                  title='YouTube video player' 
+                  frameborder='0' 
+                  allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' 
+                  allowfullscreen>
           </iframe>
 
           <div className='animation-description'>

@@ -1,6 +1,6 @@
 # a-delightful-portfolio
 A static React portfolio website developed for the digital artist [@adelightfulgoof](https://twitter.com/ADelightfulGoof) \
-Access the current version of the website [here](https://ganglyimp.github.io/a-delightful-portfolio/) (NOTE: some features might be broken on the Github Pages deployment).
+Access the current version of the website [here](https://ganglyimp.github.io/a-delightful-portfolio/) (NOTE: this website is still currently a work in progress).
 
 ## Running the project locally
 

@@ -19,7 +19,7 @@ function ArtSection(props) {
       transition={{x: {type: 'spring', stiffness: 300, damping: 30, duration: 0.2}, opacity: {duration: 0.2}}}
     >
       { props.artData && props.artData.map((item, index) => {
-          if (props.artType === 'comic') {
+          if (props.artType === 'comic') { // Comics are contained in a wrapper div to crop off length
             return(
               <div className='Art-comic-container' key={`artItem-${index}`}>
                 <img 
