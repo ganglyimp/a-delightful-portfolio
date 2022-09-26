@@ -17,12 +17,6 @@
 }
 
 .AfterDark-header {
-  width: 100vw;
-  height: 40vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
   background-image: url('../images/NightHeader_grass-left.png'), 
                     url('../images/NightHeader_grass-right.png'), 
                     url('../images/NightHeader_sky.png');
@@ -31,6 +25,14 @@
   background-size: 30vh, 30vh, auto;
   background-position: bottom left, bottom right, bottom;
   background-repeat: no-repeat, no-repeat, no-repeat;
+  background-color: #1e527c;
+  
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
   text-align: center;
   z-index: 0;
 
