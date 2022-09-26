@@ -23,11 +23,14 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  background-image: url('../images/NightHeader_grass.png'), url('../images/NightHeader_sky.png');
-  background-size: cover, cover;
-  background-attachment: local, fixed;
-  background-position: bottom, bottom;
-  background-repeat: no-repeat, no-repeat;
+  background-image: url('../images/NightHeader_grass-left.png'), 
+                    url('../images/NightHeader_grass-right.png'), 
+                    url('../images/NightHeader_sky.png');
+  background-size: contain, contain, cover;
+  background-attachment: local, local, fixed;
+  background-size: 30vh, 30vh, auto;
+  background-position: bottom left, bottom right, bottom;
+  background-repeat: no-repeat, no-repeat, no-repeat;
   text-align: center;
   z-index: 0;
 
@@ -58,6 +61,7 @@
 @media (max-width: 600px) {
   .AfterDark-header {
     height: 20vh;
+    background-size: 20vh, 20vh, auto;
   }
 
   .AfterDark-images {
