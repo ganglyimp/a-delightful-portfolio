@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import '../stylesheets/AfterDark.scss';
 import '../stylesheets/Fireflies.scss';
 
+import LazyImage from './LazyImage';
 import Lightbox from './Lightbox';
 import { slideVertical } from '../stylesheets/AnimationPresets';
 
@@ -59,12 +60,13 @@ function AfterDark() {
       </header>
 
       <div className='AfterDark-images'>
-        { imgData && imgData.map((item) => {
+        { imgData && imgData.map((item, index) => {
             return(
-              <img 
+              <LazyImage
+                key={`ad-${index}`} 
                 src={process.env.PUBLIC_URL + item.imgSrc} 
                 alt={item.imgAlt} 
-                onClick={() => {activateModal(item.imgSrc, item.imgAlt, item.imgCaption, false)}}
+                clickEvent={() => {activateModal(item.imgSrc, item.imgAlt, item.imgCaption, false)}}
               />
             )
           })

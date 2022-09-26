@@ -41,9 +41,13 @@ function Animation() {
         <motion.section className='animation-card-group'>
           { youtubeIDs && youtubeIDs.map((item, index) => {
               return (
-                <div className='animation-card' onClick={() => {thumbnailClick(index)}}>
+                <div
+                  key={`aniThumb-${index}`} 
+                  className='animation-card' 
+                  onClick={() => {thumbnailClick(index)}}
+                >
                   <h2>{youtubeTitles[index]}</h2>
-                  <img alt={youtubeTitles[index]} src={`https://img.youtube.com/vi/${item}/0.jpg`} />
+                  <img alt={youtubeTitles[index]} src={`https://img.youtube.com/vi/${item}/0.jpg`} loading='lazy'/>
                 </div>
               )
             })
@@ -56,9 +60,9 @@ function Animation() {
         <motion.section className='animation-content' id='animationModal'>
           <iframe src={`https://www.youtube.com/embed/${youtubeIDs[videoIndex]}`} 
                   title='YouTube video player' 
-                  frameborder='0' 
-                  allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' 
-                  allowfullscreen>
+                  frameborder='0'
+                  allowFullScreen
+                  loading='lazy'>
           </iframe>
 
           <div className='animation-description'>

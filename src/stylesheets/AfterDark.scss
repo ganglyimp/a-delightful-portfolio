@@ -26,7 +26,7 @@
   background-position: bottom left, bottom right, bottom;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-color: #1e527c;
-  
+
   width: 100vw;
   height: 40vh;
   display: flex;
@@ -44,6 +44,9 @@
 }
 
 .AfterDark-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 0;
   position: relative;
   z-index: 1;

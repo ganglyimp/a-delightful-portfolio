@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 import '../stylesheets/ArtSection.scss';
 
+import LazyImage from './LazyImage';
 import { sectionSlide } from '../stylesheets/AnimationPresets';
 
 function ArtSection(props) {
@@ -22,10 +23,10 @@ function ArtSection(props) {
           if (props.artType === 'comic') { // Comics are contained in a wrapper div to crop off length
             return(
               <div className='Art-comic-container' key={`artItem-${index}`}>
-                <img 
-                  src={process.env.PUBLIC_URL + item.imgSrc} 
-                  alt={item.imgAlt} 
-                  onClick={() => {props.activateModal(item.imgSrc, item.imgAlt, item.imgCaption, isComic)}}
+                <LazyImage
+                  src={process.env.PUBLIC_URL + item.imgSrc}
+                  alt={item.imgAlt}
+                  clickEvent={() => {props.activateModal(item.imgSrc, item.imgAlt, item.imgCaption, isComic)}}
                 />
                 <b>{item.imgAlt}</b>
               </div>
@@ -33,11 +34,11 @@ function ArtSection(props) {
           }
           else {
             return(
-              <img 
+              <LazyImage
                 key={`artItem-${index}`}
                 src={process.env.PUBLIC_URL + item.imgSrc} 
                 alt={item.imgAlt} 
-                onClick={() => {props.activateModal(item.imgSrc, item.imgAlt, item.imgCaption, isComic)}} 
+                clickEvent={() => {props.activateModal(item.imgSrc, item.imgAlt, item.imgCaption, isComic)}} 
               />
             )
           }

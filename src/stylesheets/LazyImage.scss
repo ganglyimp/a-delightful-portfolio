@@ -1,0 +1,22 @@
+.LazyImage {
+  overflow: hidden;
+  margin: 0;
+}
+
+.pulse {
+  height: 20vw;
+  width: 20vw;
+  margin: 5px;
+  background-color: white;
+  border-radius: 5px;
+  animation: pulse 1.4s cubic-bezier(0.4, 0 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
