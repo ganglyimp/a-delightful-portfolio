@@ -24,7 +24,10 @@ export const sectionSlide = {
   in: {
     zIndex: 1,
     x: 0,
-    opacity: 1
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1
+    }
   },
   out: (direction) => {
     return {

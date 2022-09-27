@@ -44,18 +44,22 @@
 }
 
 .AfterDark-images {
+  background-image: url('../images/cardboard/NightCardboard.jpg');
+  background-size: cover;
+  background-repeat: repeat-y;
+  
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 0;
-  position: relative;
-  z-index: 1;
 
   img {
+    position: relative;
     width: 25vw;
     padding: 10px;
     cursor: pointer;
     transition: width 0.3s;
+    z-index: 1;
   }
   img:hover {
     width: 25.5vw;

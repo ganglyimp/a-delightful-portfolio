@@ -13,7 +13,7 @@ function LazyImage(props) {
   }
 
   return (
-    <div 
+    <motion.div 
       className={`${pulse ? 'pulse' : ''} LazyImage`}
       onClick={() => {props.clickEvent()}}
     >
@@ -29,8 +29,9 @@ function LazyImage(props) {
         
         src={props.src}
         alt={props.alt}
+        loading='lazy'
       />
-    </div>
+    </motion.div>
   );
 }
 

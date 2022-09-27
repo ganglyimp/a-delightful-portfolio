@@ -2,7 +2,7 @@
   min-height: 100vh;
   padding: 10px;
   background-color: #aa8258;
-  background-image: url(../images/warmCardboard.jpg);
+  background-image: url(../images/cardboard/cardboardStripes-2.jpg);
   background-size: 100% auto;
   text-align: center;
 
@@ -15,9 +15,14 @@
     font-family: "Walter Turncoat", Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", 
     "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
   }
+
   p {
     font-size: 1.4em;
     font-family: "Pangolin", Corbel, Verdana, sans-serif;
+  }
+
+  a {
+    text-decoration: underline wavy;
   }
 }
 
