@@ -9,7 +9,7 @@ function LazyImage(props) {
 
   const imgLoaded = () => {
     setImgLoading(false);
-    setTimeout(() => {setPulse(false)}, 300);
+    setTimeout(() => {setPulse(false)}, 500);
   }
 
   return (
