@@ -60,7 +60,7 @@ function Animation() {
         <motion.section className='animation-content' id='animationModal'>
           <iframe src={`https://www.youtube.com/embed/${youtubeIDs[videoIndex]}`} 
                   title='YouTube video player' 
-                  frameborder='0'
+                  frameBorder='0'
                   allowFullScreen
                   loading='lazy'>
           </iframe>
