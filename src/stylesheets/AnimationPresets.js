@@ -37,6 +37,20 @@ export const sectionSlide = {
   }
 };
 
+export const slideUp = {
+  initial: {
+    y: window.innerHeight,
+    opacity: 0
+  },
+  in: {
+    y: 0,
+    opacity: 1
+  },
+  out: {
+    opacity: 0
+  }
+};
+
 export const videoExpand = {
   initial: {
 

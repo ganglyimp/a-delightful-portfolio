@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import '../stylesheets/ArtSection.scss';
 
 import LazyImage from './LazyImage';
-import { sectionSlide } from '../stylesheets/AnimationPresets';
+import { slideUp } from '../stylesheets/AnimationPresets';
 
 function ArtSection(props) {
   const isComic = (props.artType === 'comic') ? true : false;
@@ -12,13 +12,10 @@ function ArtSection(props) {
   return (
     <motion.section
       className={`Art-${props.artType}`}
-      custom={props.direction}
-      variants={sectionSlide}
+      variants={slideUp}
       initial='initial'
       animate='in'
       exit='out'
-      transition={{x: {type: 'spring', stiffness: 300, damping: 30, duration: 0.2}, 
-                   opacity: {duration: 0.2}}}
     >
       { props.artData && props.artData.map((item, index) => {
           if (props.artType === 'comic') { // Comics are contained in a wrapper div to crop off length
