@@ -16,6 +16,7 @@ function ArtSection(props) {
       initial='initial'
       animate='in'
       exit='out'
+      transition={{duration: 0.3, type: 'spring', bounce: 0.3}}
     >
       { props.artData && props.artData.map((item, index) => {
           if (props.artType === 'comic') { // Comics are contained in a wrapper div to crop off length
