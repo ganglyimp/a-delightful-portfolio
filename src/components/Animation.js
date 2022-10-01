@@ -1,9 +1,9 @@
 import { React, useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import '../stylesheets/Animation.scss';
 
 import { ChevronLeft } from 'react-bootstrap-icons';
-import { slideVertical } from '../stylesheets/AnimationPresets';
+import { slideVertical, fadeInOut, videoExpand } from '../stylesheets/AnimationPresets';
 
 function Animation() {
   const youtubeIDs = ['2fcDqVS-P38', 'B8VZiynoKt4'];
@@ -37,66 +37,91 @@ function Animation() {
       </button>
 
       {/* VIDEO THUMBNAIL CARDS */}
-      { !modalOpen &&
-        <motion.section className='animation-card-group'>
-          { youtubeIDs && youtubeIDs.map((item, index) => {
-              return (
-                <div
-                  key={`aniThumb-${index}`} 
-                  className='animation-card' 
-                  onClick={() => {thumbnailClick(index)}}
-                >
-                  <h2>{youtubeTitles[index]}</h2>
-                  <img alt={youtubeTitles[index]} src={`https://img.youtube.com/vi/${item}/0.jpg`} loading='lazy'/>
-                </div>
-              )
-            })
-          }
-        </motion.section>
-      }
-      
-      {/* VIDEO MODAL - YT VIDEO & DESCRIPTION */}
-      { modalOpen &&
-        <motion.section className='animation-content' id='animationModal'>
-          <iframe src={`https://www.youtube.com/embed/${youtubeIDs[videoIndex]}`} 
-                  title='YouTube video player' 
-                  frameBorder='0'
-                  allowFullScreen
-                  loading='lazy'>
-          </iframe>
+        { !modalOpen &&
+          <motion.section 
+            className='animation-card-group'
+            variants={fadeInOut}
+            initial='initial'
+            animate='in'
+            exit='out'
+            transition={{duration: 1}}
+          >
+            { youtubeIDs && youtubeIDs.map((item, index) => {
+                return (
+                  <div
+                    key={`aniThumb-${index}`} 
+                    className='animation-card'
+                  >
+                    <h2>{youtubeTitles[index]}</h2>
+                    <AnimatePresence mode='wait'>
+                      <motion.img 
+                        alt={youtubeTitles[index]} 
+                        src={`https://img.youtube.com/vi/${item}/0.jpg`}
+                        onClick={() => {thumbnailClick(index)}} 
+                        loading='lazy'
 
-          <div className='animation-description'>
-            <h2>{youtubeTitles[videoIndex]}</h2>
-        
-            { videoIndex === 0 &&
-              <>
-                <p>
-                  Two ghosts dance in the void showing the abyss isn't the thing that's eternal here :) 
-                  This was meant to be made for pride month, but this project took longer than expected,
-                  & I got addicted to MySims for a bit.
-                </p>
-                <p>
-                  Thank ya <a href='https://thescaryjokes.bandcamp.com/'>Scary Jokes</a> for making a 
-                  wonderful album!  
-                </p>
-              </>
+                        variants={videoExpand}
+                        animate='neutral'
+                        exit='expand'
+                      />
+                    </AnimatePresence>
+                  </div>
+                )
+              })
             }
-  
-            { videoIndex === 1 &&
-              <>
-                <p>
-                  After a silver lining breaks the sky landing our Little Beast in the fields among
-                  the stars, you could say a VIRGIN to the world (get it? get it? its the name of
-                  the song :))
-                </p>
-                <p>
-                  <a href='https://soundcloud.com/cowmart'>Link to song artist.</a>
-                </p>
-              </>
-            }
-          </div>
-        </motion.section>
-      }
+          </motion.section>
+        }
+
+        {/* VIDEO MODAL - YT VIDEO & DESCRIPTION */}
+        { modalOpen &&
+          <motion.section 
+            className='animation-content' 
+            id='animationModal'
+            variants={fadeInOut}
+            initial='initial'
+            animate='in'
+            exit='out'
+            transition={{duration: 1}}
+          >
+            <iframe src={`https://www.youtube.com/embed/${youtubeIDs[videoIndex]}`} 
+                    title='YouTube video player' 
+                    frameBorder='0'
+                    allowFullScreen
+                    loading='lazy'>
+            </iframe>
+
+            <div className='animation-description'>
+              <h2>{youtubeTitles[videoIndex]}</h2>
+
+              { videoIndex === 0 &&
+                <>
+                  <p>
+                    Two ghosts dance in the void showing the abyss isn't the thing that's eternal here :) 
+                    This was meant to be made for pride month, but this project took longer than expected,
+                    & I got addicted to MySims for a bit.
+                  </p>
+                  <p>
+                    Thank ya <a href='https://thescaryjokes.bandcamp.com/'>Scary Jokes</a> for making a 
+                    wonderful album!  
+                  </p>
+                </>
+              }
+
+              { videoIndex === 1 &&
+                <>
+                  <p>
+                    After a silver lining breaks the sky landing our Little Beast in the fields among
+                    the stars, you could say a VIRGIN to the world (get it? get it? its the name of
+                    the song :))
+                  </p>
+                  <p>
+                    <a href='https://soundcloud.com/cowmart'>Link to song artist.</a>
+                  </p>
+                </>
+              }
+            </div>
+          </motion.section>
+        }
 
     </motion.article>
   );

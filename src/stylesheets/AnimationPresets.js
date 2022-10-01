@@ -14,7 +14,7 @@ export const slideVertical = {
   }
 };
 
-export const sectionSlide = {
+export const sectionHorizontal = {
   initial: (direction) => {
     return {
       x: direction > 0 ? -window.innerWidth : window.innerWidth,
@@ -51,15 +51,28 @@ export const slideUp = {
   }
 };
 
-export const videoExpand = {
+export const fadeInOut = {
   initial: {
-
+    opacity: 0
   },
   in: {
-
+    opacity: 1
   },
   out: {
+    opacity: 0
+  }
+}
 
+export const videoExpand = {
+  neutral: {
+    width: null,
+    height: null,
+    opacity: 1
+  },
+  expand: {
+    width: '90vw',
+    height: '37.305vw',
+    opacity: 0
   }
 };
 //https://www.youtube.com/watch?v=3QrkCmsfewM
