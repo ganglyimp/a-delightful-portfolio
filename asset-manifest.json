@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/a-delightful-portfolio/static/css/main.1d1f7a99.css",
-    "main.js": "/a-delightful-portfolio/static/js/main.34d5a580.js",
+    "main.css": "/a-delightful-portfolio/static/css/main.44d7f5cf.css",
+    "main.js": "/a-delightful-portfolio/static/js/main.a6da4550.js",
     "static/js/787.b92d0419.chunk.js": "/a-delightful-portfolio/static/js/787.b92d0419.chunk.js",
     "static/media/RippedCardboard.png": "/a-delightful-portfolio/static/media/RippedCardboard.62aec5e8b12496336550.png",
+    "static/media/portraitCard.png": "/a-delightful-portfolio/static/media/portraitCard.65b75cac3281af3ee1f5.png",
     "static/media/cardboardTexture.jpg": "/a-delightful-portfolio/static/media/cardboardTexture.aa1e0079f586e59e118a.jpg",
     "static/media/dayHeader_clouds.png": "/a-delightful-portfolio/static/media/dayHeader_clouds.8247c970f0850d5f476e.png",
     "static/media/NightHeader_sky.png": "/a-delightful-portfolio/static/media/NightHeader_sky.92d6bdb1a591134a58f6.png",
     "static/media/cardboardBox.jpg": "/a-delightful-portfolio/static/media/cardboardBox.c11cce8a7019ed48e3b9.jpg",
     "static/media/cardboardStripes-2.jpg": "/a-delightful-portfolio/static/media/cardboardStripes-2.799bc470cb199535bb72.jpg",
-    "static/media/portraitCard.png": "/a-delightful-portfolio/static/media/portraitCard.ad45094faa013c3f717e.png",
     "static/media/NightCardboard.jpg": "/a-delightful-portfolio/static/media/NightCardboard.6b8bfceff3b64d5282fd.jpg",
     "static/media/dayHeader_grass-right.png": "/a-delightful-portfolio/static/media/dayHeader_grass-right.048fa3f46daff5d726ea.png",
     "static/media/dayHeader_grass-left.png": "/a-delightful-portfolio/static/media/dayHeader_grass-left.340550dfe647e67730d2.png",
@@ -20,12 +20,12 @@
     "static/media/twitter.png": "/a-delightful-portfolio/static/media/twitter.9936552041c8e9d621cf.png",
     "static/media/youtube.png": "/a-delightful-portfolio/static/media/youtube.4137f416a24e80e825d1.png",
     "index.html": "/a-delightful-portfolio/index.html",
-    "main.1d1f7a99.css.map": "/a-delightful-portfolio/static/css/main.1d1f7a99.css.map",
-    "main.34d5a580.js.map": "/a-delightful-portfolio/static/js/main.34d5a580.js.map",
+    "main.44d7f5cf.css.map": "/a-delightful-portfolio/static/css/main.44d7f5cf.css.map",
+    "main.a6da4550.js.map": "/a-delightful-portfolio/static/js/main.a6da4550.js.map",
     "787.b92d0419.chunk.js.map": "/a-delightful-portfolio/static/js/787.b92d0419.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d1f7a99.css",
-    "static/js/main.34d5a580.js"
+    "static/css/main.44d7f5cf.css",
+    "static/js/main.a6da4550.js"
   ]
 }
