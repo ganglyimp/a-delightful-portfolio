@@ -18,10 +18,10 @@ function About() {
         <h2>Comic Artist • Animator • Illustrator</h2>
 
         <div className='About-socials'>
-          <a href='https://twitter.com/ADelightfulGoof'>
+          <a href='https://twitter.com/pocketrituals'>
             <img src={Twitter} alt='Twitter' />
           </a>
-          <a href='https://www.youtube.com/channel/UCE5-SualIBtQGj98c9d0tsg/about'>
+          <a href='https://www.youtube.com/@adelightfulgoof3012'>
             <img src={Youtube} alt='Youtube' />
           </a>
           <a href='https://www.instagram.com/adelightfulgoof/?hl=en'>
