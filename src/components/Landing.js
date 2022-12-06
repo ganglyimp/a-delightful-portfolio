@@ -16,7 +16,7 @@ function Landing() {
       variants={slideVertical}
     >
       <header className='Landing-header' id='Home'>
-        <h1>Pocket Chimes</h1>
+        <h1>Pocket Rituals</h1>
 
         <div className='header-buttons'>
           <button type='button'>
