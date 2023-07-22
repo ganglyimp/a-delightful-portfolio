@@ -1,5 +1,5 @@
 # a-delightful-portfolio
-A static React portfolio website developed for the digital artist formally known as @adelightfulgood (currently goes by [@pocketrituals](https://twitter.com/PocketRituals)) \
+A static React portfolio website developed for the digital artist formally known as @adelightfulgoof (currently goes by [@pocketrituals](https://twitter.com/PocketRituals)) \
 Access the current version of the website [here](https://ganglyimp.github.io/a-delightful-portfolio/). This project has gone on a bit of a hiatus ever since the artist went through a rebranding crisis. I might come back to it later to fix some performance issues and do some other general cleanup. 
 
 ## Running the project locally
